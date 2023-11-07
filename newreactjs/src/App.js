@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
 
+import ListComponent from './components/list';
+
 function App() {
   const [counter, setCounter] = useState(0);
   const buttonClick = () => {
@@ -13,6 +15,7 @@ function App() {
       {anotherElement}
       <button onClick={buttonClick} className='btn btn-info'>click me</button>
       <h1>button clicked #{counter}</h1>
+      <ListComponent></ListComponent>
     </div>
   )
 }
