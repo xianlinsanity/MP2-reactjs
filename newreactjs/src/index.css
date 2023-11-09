@@ -18,6 +18,9 @@ body {
     border-radius: 10px;
     backdrop-filter: blur(50px)
 }
+.logo{
+  height: 100px;
+}
 input {
     width: 100%;
     padding: 10px;
@@ -35,16 +38,11 @@ button {
     cursor: pointer;
 }
 
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .p1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
-  color: black;
-}
-.logo {
-  height: 60px;
+  color: white;
 }
