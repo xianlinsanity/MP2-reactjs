@@ -49,7 +49,7 @@ return (
             <p id="message" className='p1'></p>
         </div>
         <br/>
-        <p className='p1'>Not yet a member? Please click<Link to="registration">here</Link>to register and avail discounts and freebies!</p>
+        <p className='p1'>Not yet a member? Please click<Link to="/registration">here</Link>to register and avail discounts and freebies!</p>
     </div>
   )
 }
