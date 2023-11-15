@@ -51,7 +51,7 @@ function Registration() {
                 <p id="message"></p>
             </div>
             <br/>
-            <p className='p1'>Please click on <Link to="login">Login</Link> if you are already registered.</p>
+            <p className='p1'>Please click on <Link to="/login">Login</Link> if you are already registered.</p>
             
         </div>
       )

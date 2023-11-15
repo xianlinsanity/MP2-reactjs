@@ -22,6 +22,8 @@ function Login() {
                   console.log('result: ', result)
                   if(result.success){
                     document.getElementById("message").innerHTML = "Login Successful! Welcome!";
+                    localStorage.setItem('token', result.token);
+                    window.location.href= '/';
                 } else {
                     document.getElementById("message").innerHTML = "Login Unsuccessful. Please check your credentials.";
                 }
@@ -49,7 +51,7 @@ return (
             <p id="message" className='p1'></p>
         </div>
         <br/>
-        <p className='p1'>Not yet a member? Please click<Link to="registration">here</Link>to register and avail discounts and freebies!</p>
+        <p className='p1'>Not yet a member? Please click<Link to="/registration">here</Link>to register and avail discounts and freebies!</p>
     </div>
   )
 }
