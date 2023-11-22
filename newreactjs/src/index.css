@@ -46,3 +46,40 @@ code {
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
   color: white;
 }
+.p2 {
+  font-family: monospace;
+  color: gold;
+}
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hide table headers on smaller screens */
+@media screen and (max-width: 300px) {
+  thead {
+    display: none;
+  }
+  tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 12px;
+  }
+  td {
+    display: block;
+    text-align: right; /* Align right for better readability */
+  }
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    float: left;
+    text-transform: uppercase;
+  }
+}

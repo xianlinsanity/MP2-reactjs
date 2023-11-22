@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Registration from './registration/login/registration';
 import Login from './registration/login/login';
-import Home from './components/Home/Home';
+import Profile from './components/Home/Profile';
 
 function App() {
   const userToken = localStorage.getItem('token');
@@ -20,7 +20,7 @@ function App() {
     {
         userToken ? //render if token is generated
         <Route path="/">
-          <Route index element={<Home/>}/>
+          <Route index element={<Profile/>}/>
         </Route>
         : //else , no go
         ""
