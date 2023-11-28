@@ -1,5 +1,12 @@
 import React from 'react';
 import logo from '../../logo.png'
+import youtube from '../../youtube.svg'
+import facebook from '../../facebook.svg'
+import instagram from '../../instagram.svg'
+import twitter from '../../twitter-x.svg'
+import phone from '../../phone.svg'
+import email from '../../e-mail.svg'
+import map from '../../map.svg'
 import { Link } from 'react-router-dom';
 
 function Login() {
@@ -32,63 +39,73 @@ function Login() {
                 return false;
               })
     }
-    const newlogo = <img src={logo} class="img-thumbnail logo" alt='logo'></img>
+    const newlogo = <img src={logo} className="img-thumbnail logo1" alt='logo'></img>
+    const youtubesvg = <img src={youtube} className="logo" alt='youtube'></img>
+    const instagramsvg = <img src={instagram} className="logo" alt='instagram'></img>
+    const facebooksvg = <img src={facebook} className="logo" alt='facebook'></img>
+    const twittersvg = <img src={twitter} className="logo" alt='twitter'></img>
+    const phonesvg = <img src={phone} className="logo2" alt='phone'></img>
+    const emailsvg = <img src={email} className="logo2" alt='email'></img>
+    const mapsvg = <img src={map} className="logo2" alt='map'></img>
 return (
-    <div className='container'>
-    <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="I#"/><img src="pictures/logo.png" className="logo"/>
+    <div>
+      <div>
+      <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div className="container distance1">
+        <a className="navbar-brand" href="#"/>{newlogo}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse distance2" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item navdistance">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <div className="collapse navbar-collapse distance2" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item navdistance">
+              <a className="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item navdistance">
-              <a class="nav-link" href="about.html">About Us</a>
+            <li className="nav-item navdistance">
+              <a className="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item navdistance">
-              <a class="nav-link" href="pricing.html">Pricing</a>
+            <li className="nav-item navdistance">
+              <a className="nav-link" href="pricing.html">Pricing</a>
             </li>
-            <li class="nav-item dropdown navdistance">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li className="nav-item dropdown navdistance">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Members
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Login</a></li>
-                <li><a class="dropdown-item" href="#">Register</a></li>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="#">Login</a></li>
+                <li><a className="dropdown-item" href="#">Register</a></li>
               </ul>
             </li>
           </ul>
         </div>
-        <div class="collapse navbar-collapse distance1" id="navbarNavDropdown">
-        <ol>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul className="navbar-nav distance2">
             <li>
-            <p className="font1 distance">follow us:</p>
+            <h5 className="font1 distance2">follow: </h5>
             </li>
-            <li>
-            <ul class="navbar-nav">
-            <li class="nav-item">
-            <a href="#"/><img src="svg/facebook.svg" alt="facebook logo" width="20" height="20" />
+            <li className="nav-item distance2">
+            <a href="#"/>{facebooksvg}
             </li>
-            <li class="nav-item">
-            <a href="#"/><img src="svg/twitter-x.svg" alt="twitter logo" width="20" height="20"/>
+            <li className="nav-item distance2">
+            <a href="#"/>{twittersvg}
             </li>
-            <li class="nav-item">
-            <a href="#"/><img src="svg/youtube.svg" alt="youtube logo" width="20" height="20" />
+            <li className="nav-item distance2">
+            <a href="#"/>{youtubesvg}
             </li>
-            <li class="nav-item">
-              <a href="#"/><img src="svg/instagram.svg" alt="instagram logo" width="20" height="20" />
+            <li className="nav-item distance2">
+              <a href="#"/>{instagramsvg}
             </li>
-            </ul>
-            </li>
-        </ol>
+        </ul>
         </div>
         </div>
         </nav>
-        <br/>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="container1">
+      <br/>
         <br/>
         <h2 className='p2'>Member's Login</h2>
         <p className='p1'>Please fill out the information needed.</p>
@@ -104,7 +121,26 @@ return (
         </div>
         <br/>
         <p className='p1'>Not yet a member? Please click <Link to="/registration">here</Link> to register!</p>
-    </div>
+      </div>
+       <footer className="footerbg border border-secondary">
+       <br/>
+       <div className="container text-center">
+        <div className="row">
+        <div className="col">
+        {mapsvg} <p className="font2">123456 Juan Luna St. <br/> Cebu City, Philippines 6000</p> 
+        </div>
+        <div className="col">
+        {phonesvg} <p className="font2"> +(63)945-134-6666 <br/> (012)345-6789</p> 
+        </div>
+        <div className="col">
+        {emailsvg} <p className="font2">nopainnogain@gmail.com <br/>contactus@nopain.com</p> 
+        </div>
+       </div>
+       <br/>
+       </div>
+       <p className="font2 p-3 mb-2 bg-black text-white">Copyright ©2023 All rights reserved | No Pain No Gain®</p>
+      </footer>   
+     </div>
   )
 }
 

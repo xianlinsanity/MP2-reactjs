@@ -30,9 +30,9 @@ function Home() {
     useEffect(()=>{
         getUserData()
     }, [])
-    const newlogo = <img src={logo} class="img-thumbnail logo" ></img>
+    const newlogo = <img src={logo} class="img-thumbnail logo1" ></img>
     return (
-        <div className='container'>
+        <div className='container1'>
             {newlogo}
             <br />
             <h1 className='p1'>Profile</h1>

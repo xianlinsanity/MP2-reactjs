@@ -10,16 +10,31 @@ body {
     text-align: center;
     background-image:url(gym.jpg) ;
 }
-.container {
-    margin: 20px auto;
+.container1 {
+    margin: 60px auto;
     max-width: 400px;
-    padding: 20px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 10px;
     backdrop-filter: blur(50px)
 }
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 15px;
+  backdrop-filter: blur(50px)
+}
+.follow{
+  margin-top: -1rem;
+}
 .logo{
-  height: 100px;
+  height: 20px;
+}
+.logo1{
+ height: 60px;
+}
+.logo2{
+  height: 30px;
 }
 input {
     width: 100%;
@@ -83,7 +98,7 @@ th, td {
     text-transform: uppercase;
   }
 }
-@import "bootstrap/scss/utilities";
+/* @import "bootstrap/scss/utilities"; */
 *{
   scroll-behavior: smooth;
   }
@@ -93,7 +108,8 @@ th, td {
     position: fixed;
     width: 100%;
     z-index: 12;
-    margin-top: -8px;
+    margin-top: -21px;
+
   }
 .navbar a {
     display: block;
@@ -110,9 +126,6 @@ th, td {
 .navdistance{
   padding-right: 40px;
   font-size: larger;
-}
-.logo{
-  height: 60px;
 }
 .content {
     padding: 200px 16px; 
@@ -156,11 +169,12 @@ th, td {
   padding-left: 44%;
 }
 .distance1{
-  padding-left: 100px;
+  padding-left: 10px;
 }
 .distance2{
-  padding-left: 18%;
+  padding-left: 14%;
 }
+
 .footerbg{
   background-color: #2f302f;
 }
@@ -213,7 +227,8 @@ th, td {
   }
   .font1
   {
-    color: white
+    color: white;
+    margin-top: 30px;
   }
   .font2{
     text-align: center; 
@@ -243,7 +258,7 @@ th, td {
     background-image: url(pictures/trainor.jpg)
     
   }
-  @import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
+  /* @import 'https://fonts.googleapis.com/css?family=Do+Hyeon'; */
 *,
 *:before,
 *:after {
