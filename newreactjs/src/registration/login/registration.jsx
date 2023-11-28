@@ -12,6 +12,8 @@ function Registration() {
     const phonenumber = document.getElementById("phonenumber")
     const gender = document.getElementById("gender")
     const subscription = document.getElementById("subscription")
+    const age = document.getElementById("age")
+    const bmi = document.getElementById("bmi")
 
     fetch('http://localhost:3000/register', {
         method: 'post',
@@ -28,6 +30,8 @@ function Registration() {
             phonenumber: phonenumber.value,
             gender: gender.value,
             subscription: subscription.value,
+            age: age.value,
+            bmi: bmi.value,
         })
     }).then(function(result){
           return result.json()
@@ -49,38 +53,42 @@ function Registration() {
                 {newlogo}
                 <br/>
                 <br/>
-            <h2 className='p1'>Registration Form</h2>
+            <h2 className='p2'>Registration Form</h2>
             <br/>
             <p className='p1'>Please fill out the information to register!</p>
             <br/>
             <div>
                 <input type="text" id="username" placeholder="Username"/>
                 <input type="password" id="password" placeholder="Password"/>
-                <label for="information" class="font">Personal Information:</label>
+                <label for="information" className="p2">Personal Information:</label>
             <input type="text" id="firstname" placeholder="First Name"/>
             <input type="text" id="lastname" placeholder="Last Name"/>
             <input type="text" id="email" placeholder="Email Address"/>
-            <input type="tel" id="phonenumber" placeholder="Phone Number"/>
-            <label for="gender" class="font">Gender:</label>
+            <input type="number" id="phonenumber" placeholder="Phone Number"/>
+            <label for="gender" className="p2">Gender:</label>
              <select class="form-select" id="gender">
                  <option selected>Choose...</option>
                  <option value="Male">Male</option>
                  <option value="Female">Female</option>
                  <option value="Confused">Undecided</option>
             </select>
-            <label for="subscription" class="font">Select Subscription:</label>
+            <label for="subscription" className="p2">Select Subscription:</label>
              <select class="form-select" id="subscription">
                  <option selected>Choose...</option>
                  <option value="walk-in">Walk-in</option>
                  <option value="1-Year">1-Year</option>
                  <option value="6-Months">6-Months</option>
             </select>
+            <br />
+            <input type="number" id="age" placeholder="Age"/>
+            <input type="number" id="bmi" placeholder="BMI"/>
+            <br/>
                 <button id="register" onClick={registerbtnclick} className='btn btn-secondary btn-lg'>Register</button>
                 <br/>
-                <p id="message"></p>
+                <p className='p2' id="message"></p>
             </div>
             <br/>
-            <p className='p1'>Please click on <Link to="/login">Login</Link> if you are already registered.</p>
+            <p className='p2'>Please click on <Link to="/login">Login</Link> if you are already registered.</p>
             
         </div>
       )

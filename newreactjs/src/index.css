@@ -83,3 +83,528 @@ th, td {
     text-transform: uppercase;
   }
 }
+@import "bootstrap/scss/utilities";
+*{
+  scroll-behavior: smooth;
+  }
+.navbar {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Add a blur effect to the navbar */
+    position: fixed;
+    width: 100%;
+    z-index: 12;
+    margin-top: -8px;
+  }
+.navbar a {
+    display: block;
+    color: rgb(227, 222, 222);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+  text-transform: uppercase;
+  color: gold;
+  transform: rotate(15deg);
+}
+.navdistance{
+  padding-right: 40px;
+  font-size: larger;
+}
+.logo{
+  height: 60px;
+}
+.content {
+    padding: 200px 16px; 
+    color: white;
+  }
+  .content2 {
+    padding: 150px 16px; 
+    color: white;
+  }
+.home{
+  background-image: url(pictures/pic2.jpg);
+  background-size: auto;
+  background-position: center;
+  height: 722px;
+  width: 100%;
+}
+.about{
+  background-image: url(pictures/hero-1.jpg);
+  background-size: auto;
+  background-position: center;
+  height: 722px;
+  width: 100%;
+}
+.pricing{
+  background-image: url(pictures/pic1.jpg);
+  background-size: auto;
+  background-position: center;
+  height: 25%;
+  width: 100%;
+  opacity: 10;
+  padding-top: -25%;
+}
+
+.background{
+  background-color: #070707;
+}
+.exercisebg{
+  background-color: rgb(33, 32, 32);
+}
+.distance{
+  padding-left: 44%;
+}
+.distance1{
+  padding-left: 100px;
+}
+.distance2{
+  padding-left: 18%;
+}
+.footerbg{
+  background-color: #2f302f;
+}
+/* BMI */
+.bmi {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .calculator {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  input[type="number"],
+  input[type="submit"] {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #323533;
+    color: white;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #191a19;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  #result {
+    font-weight: bold;
+  }
+  .font1
+  {
+    color: white
+  }
+  .font2{
+    text-align: center; 
+    vertical-align: bottom; 
+    color: white;
+  }
+  .font3{
+    text-align: center;
+    color: gold;
+  }
+  .font4{
+    font-family: monospace;
+    text-align: center;
+    color: black;
+  }
+  .fonthome{
+    color: gold; 
+    font-size: x-large; 
+    text-align: center; 
+    margin-top: -140px;
+  }
+  .chart{
+    text-align: center;
+  }
+  /* trainor */
+  .trainorbackground{
+    background-image: url(pictures/trainor.jpg)
+    
+  }
+  @import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear-fix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.card__collection {
+  position: relative;
+  display: block;
+  background: rgba(10, 10, 10, 0.5);
+  padding: 10px;
+  font-family: "Do Hyeon", sans-serif;
+  overflow: hidden;
+}
+.card__collection .cards {
+  width: 300px;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  float: left;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  margin: 10px;
+}
+.card__collection .cards--one {
+  backface-visiblility: hidden;
+}
+.card__collection .cards--one:hover:after {
+  bottom: -20px;
+}
+.card__collection .cards--one:hover:before {
+  bottom: -10px;
+}
+.card__collection .cards--one:hover .cards--one__rect {
+  left: 45%;
+}
+.card__collection .cards--one:hover .cards--one__rect--back {
+  left: 50%;
+}
+.card__collection .cards--one::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 70px;
+  transform: rotate(-3deg);
+  background: #e660e3;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: -10px;
+  z-index: 9;
+  transition: all 0.2s ease-in;
+  transition-delay: 0.3s;
+}
+.card__collection .cards--one:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 80px;
+  transform: rotate(-3deg);
+  bottom: -90px;
+  left: 0;
+  background: #fff;
+  right: -10px;
+  z-index: 5;
+  transition: all 0.2s ease-in;
+  transition-delay: 0.1s;
+}
+.card__collection .cards--one__rect {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  background: #0f9bc0;
+  width: 126px;
+  height: 55px;
+  transform: skewY(5deg);
+  position: absolute;
+  display: block;
+  top: 60%;
+  left: -45%;
+  z-index: 1;
+  line-height: 3.3rem;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+.card__collection .cards--one__rect--back {
+  display: block;
+  background: rgba(34, 65, 154, 0.8);
+  width: 126px;
+  height: 55px;
+  transform: skewY(7deg);
+  position: absolute;
+  top: 65%;
+  left: -50%;
+  transition: all 0.2s ease-in;
+  transition-delay: 0.3s;
+}
+.card__collection .cards--one__rect p {
+  transform: skewY(-7deg);
+  position: relative;
+}
+.card__collection .cards--two {
+  position: relative;
+  backface-visibility: hidden;
+}
+.card__collection .cards--two p {
+  position: absolute;
+  top: 83%;
+  left: -100%;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  z-index: 8;
+  transition: all 0.6s ease;
+}
+.card__collection .cards--two:hover p {
+  left: 8%;
+}
+.card__collection .cards--two:hover img {
+  transform: translateY(-15px);
+}
+.card__collection .cards--two:hover .cards--two__rect {
+  top: 75%;
+}
+.card__collection .cards--two:hover .cards--two__rect:before {
+  transform: translateY(15px);
+}
+.card__collection .cards--two:hover li {
+  transform: translateY(0);
+}
+.card__collection .cards--two:hover .cards--two__tri {
+  right: -40%;
+}
+.card__collection .cards--two:hover .cards--two__tri:before {
+  right: -312px;
+}
+.card__collection .cards--two img {
+  transition: all 0.2s ease;
+}
+
+.card__collection .cards--two__rect {
+  width: 750px;
+  height: 200px;
+  background: gold;
+  display: block;
+  position: absolute;
+  top: 175%;
+  left: -78%;
+  transform: rotate(30deg);
+  z-index: 5;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+.card__collection .cards--two__rect:before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: #3e3d3c;
+  transform: translateY(200px);
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
+.card__collection .cards--two ul {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  z-index: 9;
+}
+.card__collection .cards--two ul li {
+  display: inline-block;
+  font-size: 16px;
+  margin: -1px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(100px);
+}
+.card__collection .cards--two ul li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.card__collection .cards--two ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.card__collection .cards--two ul li:nth-child(4) {
+  transition-delay: 0.4s;
+  /* exercice videos */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .video-item {
+    flex: 0 0 calc(33.33% - 10px); /* 33.33% width for each video item */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .video-item video {
+    width: 30%;
+    height: auto;
+  }
+ /*testimonials*/
+}
+.card{ 
+  border-color: gold;
+  background-color: rgb(20, 20, 19);
+}
+.user-content p{
+  margin-top:5px;
+  font-size:12px;
+  color: #fff;
+}
+.ratings i{
+  color:gold;
+}
+
+/* pricing */
+
+.ag-format-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 50px 0;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  text-decoration: none;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item-box {
+  font-size: 18px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_font {
+  font-weight: bold;
+  color: gold;
+  text-align: center;
+
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}

@@ -32,13 +32,65 @@ function Login() {
                 return false;
               })
     }
-    const newlogo = <img src={logo} class="img-thumbnail logo" ></img>
+    const newlogo = <img src={logo} class="img-thumbnail logo" alt='logo'></img>
 return (
     <div className='container'>
-        {newlogo}
+    <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="I#"/><img src="pictures/logo.png" className="logo"/>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse distance2" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item navdistance">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item navdistance">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item navdistance">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item dropdown navdistance">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Members
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse distance1" id="navbarNavDropdown">
+        <ol>
+            <li>
+            <p className="font1 distance">follow us:</p>
+            </li>
+            <li>
+            <ul class="navbar-nav">
+            <li class="nav-item">
+            <a href="#"/><img src="svg/facebook.svg" alt="facebook logo" width="20" height="20" />
+            </li>
+            <li class="nav-item">
+            <a href="#"/><img src="svg/twitter-x.svg" alt="twitter logo" width="20" height="20"/>
+            </li>
+            <li class="nav-item">
+            <a href="#"/><img src="svg/youtube.svg" alt="youtube logo" width="20" height="20" />
+            </li>
+            <li class="nav-item">
+              <a href="#"/><img src="svg/instagram.svg" alt="instagram logo" width="20" height="20" />
+            </li>
+            </ul>
+            </li>
+        </ol>
+        </div>
+        </div>
+        </nav>
         <br/>
         <br/>
-        <h2 className='p1'>Member's Login</h2>
+        <h2 className='p2'>Member's Login</h2>
         <p className='p1'>Please fill out the information needed.</p>
         <br/>
         <div>
@@ -51,7 +103,7 @@ return (
             <p id="message" className='p1'></p>
         </div>
         <br/>
-        <p className='p1'>Not yet a member? Please click<Link to="/registration">here</Link>to register and avail discounts and freebies!</p>
+        <p className='p1'>Not yet a member? Please click <Link to="/registration">here</Link> to register!</p>
     </div>
   )
 }

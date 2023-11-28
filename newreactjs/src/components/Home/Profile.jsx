@@ -73,6 +73,14 @@ function Home() {
                     <td>Subscription:</td>
                     <td className='p2'>{userData.subscription}</td>
                 </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td className='p2'>{userData.age}</td>
+                </tr>
+                <tr>
+                    <td>BMI:</td>
+                    <td className='p2'>{userData.bmi}</td>
+                </tr>
             </tbody>
         </table>
         <br />
