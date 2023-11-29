@@ -67,7 +67,7 @@ return (
       <div>
       <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
       <div className="container distance1">
-        <a className="navbar-brand" href="#"/>{newlogo}
+      <a className="navbar-brand"><Link to="/home">{newlogo}</Link></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -77,7 +77,7 @@ return (
             <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
             </li>
             <li className="nav-item navdistance">
-              <a className="nav-link" href="about.html">About Us</a>
+              <a className="nav-link" href="about.html"><Link to="/home">About Us</Link></a>
             </li>
             <li className="nav-item navdistance">
               <a className="nav-link" href="pricing.html">Pricing</a>
