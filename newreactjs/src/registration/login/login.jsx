@@ -59,7 +59,7 @@ return (
         <div className="collapse navbar-collapse distance2" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item navdistance">
-              <a className="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
             </li>
             <li className="nav-item navdistance">
               <a className="nav-link" href="about.html">About Us</a>
@@ -72,8 +72,8 @@ return (
                 Members
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Login</a></li>
-                <li><a className="dropdown-item" href="#">Register</a></li>
+              <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
+              <li><a className="dropdown-item"><Link to="/registration">Register</Link></a></li>
               </ul>
             </li>
           </ul>

@@ -1,5 +1,12 @@
 import React from 'react';
 import logo from '../../logo.png';
+import youtube from '../../youtube.svg'
+import facebook from '../../facebook.svg'
+import instagram from '../../instagram.svg'
+import twitter from '../../twitter-x.svg'
+import phone from '../../phone.svg'
+import email from '../../e-mail.svg'
+import map from '../../map.svg'
 import { Link } from 'react-router-dom';
 
 function Registration() {
@@ -47,10 +54,72 @@ function Registration() {
           })
   
     }
-    const newlogo = <img src={logo} class="img-thumbnail logo" ></img>
-    return (
-        <div className='container'>
-                {newlogo}
+    const newlogo = <img src={logo} className="img-thumbnail logo1" alt='logo'></img>
+    const youtubesvg = <img src={youtube} className="logo" alt='youtube'></img>
+    const instagramsvg = <img src={instagram} className="logo" alt='instagram'></img>
+    const facebooksvg = <img src={facebook} className="logo" alt='facebook'></img>
+    const twittersvg = <img src={twitter} className="logo" alt='twitter'></img>
+    const phonesvg = <img src={phone} className="logo2" alt='phone'></img>
+    const emailsvg = <img src={email} className="logo2" alt='email'></img>
+    const mapsvg = <img src={map} className="logo2" alt='map'></img>
+return (
+    <div>
+      <div>
+      <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div className="container distance1">
+        <a className="navbar-brand" href="#"/>{newlogo}
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse distance2" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item navdistance">
+            <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
+            </li>
+            <li className="nav-item navdistance">
+              <a className="nav-link" href="about.html">About Us</a>
+            </li>
+            <li className="nav-item navdistance">
+              <a className="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li className="nav-item dropdown navdistance">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Members
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
+                <li><a className="dropdown-item"><Link to="/registration">Register</Link></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul className="navbar-nav distance2">
+            <li>
+            <h5 className="font1 distance2">follow: </h5>
+            </li>
+            <li className="nav-item distance2">
+            <a href="#"/>{facebooksvg}
+            </li>
+            <li className="nav-item distance2">
+            <a href="#"/>{twittersvg}
+            </li>
+            <li className="nav-item distance2">
+            <a href="#"/>{youtubesvg}
+            </li>
+            <li className="nav-item distance2">
+              <a href="#"/>{instagramsvg}
+            </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="container1">
                 <br/>
                 <br/>
             <h2 className='p2'>Registration Form</h2>
@@ -64,7 +133,7 @@ function Registration() {
             <input type="text" id="firstname" placeholder="First Name"/>
             <input type="text" id="lastname" placeholder="Last Name"/>
             <input type="text" id="email" placeholder="Email Address"/>
-            <input type="number" id="phonenumber" placeholder="Phone Number"/>
+            <input type="tel" id="phonenumber" placeholder="Phone Number"/>
             <label for="gender" className="p2">Gender:</label>
              <select class="form-select" id="gender">
                  <option selected>Choose...</option>
@@ -89,7 +158,25 @@ function Registration() {
             </div>
             <br/>
             <p className='p2'>Please click on <Link to="/login">Login</Link> if you are already registered.</p>
-            
+            </div>
+            <footer className="footerbg border border-secondary">
+       <br/>
+       <div className="container text-center">
+        <div className="row">
+        <div className="col">
+        {mapsvg} <p className="font2">123456 Juan Luna St. <br/> Cebu City, Philippines 6000</p> 
+        </div>
+        <div className="col">
+        {phonesvg} <p className="font2"> +(63)945-134-6666 <br/> (012)345-6789</p> 
+        </div>
+        <div className="col">
+        {emailsvg} <p className="font2">nopainnogain@gmail.com <br/>contactus@nopain.com</p> 
+        </div>
+       </div>
+       <br/>
+       </div>
+       <p className="font2 p-3 mb-2 bg-black text-white">Copyright ©2023 All rights reserved | No Pain No Gain®</p>
+      </footer>   
         </div>
       )
     }

@@ -3,7 +3,8 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Registration from './registration/login/registration';
 import Login from './registration/login/login';
-import Profile from './components/Home/Profile';
+import Profile from './components/Profile/Profile';
+import Home from './components/Profile/Profile';
 
 function App() {
   const userToken = localStorage.getItem('token');
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="login" element={<Login/>}/>
         <Route path="registration" element={<Registration/>}/>
+        <Route path="home" element={<Home/>}/>
     {
         userToken ? //render if token is generated
         <Route path="/">
