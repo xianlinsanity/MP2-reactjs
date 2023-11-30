@@ -77,14 +77,14 @@ return (
             <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
             </li>
             <li className="nav-item navdistance">
-              <a className="nav-link" href="about.html"><Link to="/home">About Us</Link></a>
+              <a className="nav-link"><Link to="/about">About Us</Link></a>
             </li>
             <li className="nav-item navdistance">
-              <a className="nav-link" href="pricing.html">Pricing</a>
+              <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
             </li>
             <li className="nav-item dropdown navdistance">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Members
+              Members
               </a>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>

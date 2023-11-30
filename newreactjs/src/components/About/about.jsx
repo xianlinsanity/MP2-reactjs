@@ -32,10 +32,10 @@ const menusvg = <img src={menu} alt='training'></img>
 const heartsvg = <img src={heart} alt='heart'></img>
 const test1 = <img src={testimonial1} className="rounded-circle" alt='testimonial'></img>
 const test2 = <img src={testimonial2} className="rounded-circle" alt='testimonial'></img>
-const test3 = <img src={testimonial3} className="rounded-circle" alt='testimonial'></img>
+const test3 = <img src={testimonial3} className="rounded-circle testpic" alt='testimonial'></img>
 
 return (
-<div>
+<div className='background'>
   <div>
   <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
   <div className="container distance1">
@@ -49,10 +49,10 @@ return (
         <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
         </li>
         <li className="nav-item navdistance">
-          <a className="nav-link"><Link to="/about">About Us</Link></a>
+          <a className="nav-link">About Us</a>
         </li>
         <li className="nav-item navdistance">
-          <a className="nav-link">Pricing</a>
+          <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
         </li>
         <li className="nav-item dropdown navdistance">
           <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -162,7 +162,7 @@ return (
             <div className="col-md-4">                
                 <div className="card p-3 text-center px-4">                    
                     <div className="user-image">                        
-                    {test2}                       
+                    {test3}                       
                     </div>                    
                     <div className="user-content">                        
                         <h5 className="mb-0 font2">Mark Smith</h5>
@@ -182,7 +182,7 @@ return (
             <div className="col-md-4">                
                 <div className="card p-3 text-center px-4">                    
                     <div className="user-image">                        
-                    {test3}                        
+                    {test2}                        
                     </div>                    
                     <div className="user-content">                        
                         <h5 className="mb-0 font2">Veera  Duncan</h5>
