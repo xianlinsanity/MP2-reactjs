@@ -48,7 +48,7 @@ const tr2pic = <img src={trainer2} className="img-responsive" alt='trainer'></im
 const tr3pic = <img src={trainer3} className="img-responsive" alt='trainer'></img>
 const wmpic = <img src={waistpic} className="img-fluid" alt='waist'></img>
 const yoga = <video muted autoPlay loop playsinline src={vid1} className="exercise" alt='yoga' type="video/mp4"></video>
-const weightlifting = <video muted autoPlay loop playsinline src={vid2} className="exercise" alt='waightlifting' type="video/mp4"></video>
+const weightlifting = <video muted autoPlay loop playsinline src={vid2} className="exercise" alt='weightlifting' type="video/mp4"></video>
 const cardio = <video muted autoPlay loop playsinline src={vid3} className="exercise" alt='cardio' type="video/mp4"></video>
 
 return (
@@ -63,7 +63,7 @@ return (
     <div className="collapse navbar-collapse distance2" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item navdistance">
-        <a className="nav-link active font3" aria-current="page">HOME</a>
+        <a className="nav-link active" aria-current="page">HOME</a>
         </li>
         <li className="nav-item navdistance">
           <a className="nav-link"><Link to="/about">About Us</Link></a>
@@ -87,17 +87,17 @@ return (
         <li>
         <h5 className="font1 distance2">follow: </h5>
         </li>
-        <li className="nav-item distance2">
-        <a href="#"/>{facebooksvg}
+        <li className="nav-item distance1">
+        <a href="https://www.facebook.com">{facebooksvg}</a>
         </li>
-        <li className="nav-item distance2">
-        <a href="#"/>{twittersvg}
+        <li className="nav-item distance1">
+        <a href="https://www.twitter.com">{twittersvg}</a>
         </li>
-        <li className="nav-item distance2">
-        <a href="#"/>{youtubesvg}
+        <li className="nav-item distance1">
+        <a href="https://www.youtube.com">{youtubesvg}</a>
         </li>
-        <li className="nav-item distance2">
-          <a href="#"/>{instagramsvg}
+        <li className="nav-item distance1">
+          <a href="https://www.instagram.com">{instagramsvg} </a>
         </li>
     </ul>
     </div>

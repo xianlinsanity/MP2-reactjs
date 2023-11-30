@@ -49,7 +49,7 @@ return (
         <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
         </li>
         <li className="nav-item navdistance">
-          <a className="nav-link">About Us</a>
+          <a className="nav-link">ABOUT US</a>
         </li>
         <li className="nav-item navdistance">
           <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
@@ -70,17 +70,17 @@ return (
         <li>
         <h5 className="font1 distance2">follow: </h5>
         </li>
-        <li className="nav-item distance2">
-        <a href="#"/>{facebooksvg}
+        <li className="nav-item distance1">
+        <a href="https://www.facebook.com">{facebooksvg}</a>
         </li>
-        <li className="nav-item distance2">
-        <a href="#"/>{twittersvg}
+        <li className="nav-item distance1">
+        <a href="https://www.twitter.com">{twittersvg}</a>
         </li>
-        <li className="nav-item distance2">
-        <a href="#"/>{youtubesvg}
+        <li className="nav-item distance1">
+        <a href="https://www.youtube.com">{youtubesvg}</a>
         </li>
-        <li className="nav-item distance2">
-          <a href="#"/>{instagramsvg}
+        <li className="nav-item distance1">
+          <a href="https://www.instagram.com">{instagramsvg} </a>
         </li>
     </ul>
     </div>
@@ -206,7 +206,7 @@ return (
       <h1 className="font2">WHAT ARE YOU WAITING FOR? </h1>
       <h4 className="font3">HELP US HELP YOU</h4>
       <br/>
-      <h2 className="font2"><a className="link-offset-2 link-underline link-underline-opacity-0" ><mark>REGISTER HERE</mark> </a></h2>
+      <h2 className="font2"><a className="link-offset-2 link-underline link-underline-opacity-0" ><mark><Link to="/registration">REGISTER HERE</Link></mark></a></h2>
     </div>
     </div>
     </section>

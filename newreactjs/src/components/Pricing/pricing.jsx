@@ -38,11 +38,11 @@ return (
           <a className="nav-link"><Link to="/about">About Us</Link></a>
         </li>
         <li className="nav-item navdistance">
-          <a className="nav-link">Pricing</a>
+          <a className="nav-link font3">PRICING</a>
         </li>
         <li className="nav-item dropdown navdistance">
           <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <Link to="/login">Members</Link>
+          <Link to="/login">MEMBERS</Link>
           </a>
           <ul className="dropdown-menu">
           <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
@@ -52,21 +52,21 @@ return (
       </ul>
     </div>
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul className="navbar-nav distance2">
+    <ul className="navbar-nav distance1">
         <li>
-        <h5 className="font1 distance2">follow: </h5>
+        <h5 className="font1 distance1">follow: </h5>
         </li>
-        <li className="nav-item distance2">
-        <a href="https://www.facebook.com/">{facebooksvg}</a>
+        <li className="nav-item distance1">
+        <a href="https://www.facebook.com">{facebooksvg}</a>
         </li>
-        <li className="nav-item distance2">
-        <a href="#"/>{twittersvg}
+        <li className="nav-item distance1">
+        <a href="https://www.twitter.com">{twittersvg}</a>
         </li>
-        <li className="nav-item distance2">
-        <a href="#"/>{youtubesvg}
+        <li className="nav-item distance1">
+        <a href="https://www.youtube.com">{youtubesvg}</a>
         </li>
-        <li className="nav-item distance2">
-          <a href="#"/>{instagramsvg}
+        <li className="nav-item distance1">
+          <a href="https://www.instagram.com">{instagramsvg} </a>
         </li>
     </ul>
     </div>
