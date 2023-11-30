@@ -84,16 +84,16 @@ return (
             <h5 className="font1 distance2">follow: </h5>
             </li>
             <li className="nav-item distance2">
-            <a href="#"/>{facebooksvg}
+            <a href="https://www.facebook.com">{facebooksvg}</a>
+             </li>
+            <li className="nav-item distance1">
+             <a href="https://www.twitter.com">{twittersvg}</a>
             </li>
-            <li className="nav-item distance2">
-            <a href="#"/>{twittersvg}
+           <li className="nav-item distance1">
+           <a href="https://www.youtube.com">{youtubesvg}</a>
             </li>
-            <li className="nav-item distance2">
-            <a href="#"/>{youtubesvg}
-            </li>
-            <li className="nav-item distance2">
-              <a href="#"/>{instagramsvg}
+           <li className="nav-item distance1">
+           <a href="https://www.instagram.com">{instagramsvg} </a>
             </li>
         </ul>
         </div>

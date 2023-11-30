@@ -65,7 +65,7 @@ return (
           </li>
       </ul>
     </div>
-    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+    <div className="collapse navbar-collapse navbg" id="navbarNavDropdown">
     <ul className="navbar-nav distance2">
         <li>
         <h5 className="font1 distance2">follow: </h5>
@@ -98,30 +98,30 @@ return (
       <h1 className="content2 font2"> WHY CHOOSE US? </h1>
       <p className="fonthome"> WE WILL HELP YOU PUSH YOUR LIMIT</p>
       <br/>
-      <div className="container text-center">
-        <div className="row">
-          <div className="col">
+      <div className="container overflow-hidden text-center">
+        <div className="row gy-5">
+          <div className="col-6">
           {equipsvg}
             <br/>
             <br/>
             <h5 className="font1">MODERN EQUIPMENTS</h5>
             <p className="font2">Our state-of-the-art gym is where cutting-edge technology meets fitness excellence. Our facility boasts an impressive array of modern equipment designed to cater to all your workout needs.</p>
           </div>
-          <div className="col">
+          <div className="col-6">
           {menusvg}
             <br/>
             <br/>
             <h5 className="font1">HEALTHY DIET PLAN</h5>
             <p className="font2">We understand that fitness isn't just about workouts—it also includes nutrition. Our dedicated team experts design personalized and sustainable diet plans tailored to individual fitness goals.</p>
           </div>
-          <div className="col">
+          <div className="col-6">
           {trainsvg}
             <br/>
             <br/>
             <h5 className="font1">PROFESSIONAL TRAINERS</h5>
             <p className="font2">Our gym’s professional trainers are experts in fitness and wellness who can help you achieve your goals. They can design a personalized program that suits your needs and preferences</p>
           </div>
-          <div className="col circle">
+          <div className="col-6">
           {heartsvg}
             <br/>
             <br/>
@@ -132,6 +132,14 @@ return (
       </div>
     </div>
     </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     {/* <!-- Testimonials --> */}
     <section>
     <div className="container trainorbackground">
