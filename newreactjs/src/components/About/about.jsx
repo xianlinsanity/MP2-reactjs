@@ -7,8 +7,8 @@ import twitter from '../../twitter-x.svg'
 import phone from '../../phone.svg'
 import email from '../../e-mail.svg'
 import map from '../../map.svg'
-import equipment from '../../equipmwnt2.svg'
-import heartbeat from '../../heartbeat.svg'
+import equipment from '../../equipment2.svg'
+import heart from '../../heart.svg'
 import training from '../../training.svg'
 import menu from '../../menu.svg'
 import testimonial1 from '../../testimonial1.jpg'
@@ -27,9 +27,9 @@ const phonesvg = <img src={phone} className="logo2" alt='phone'></img>
 const emailsvg = <img src={email} className="logo2" alt='email'></img>
 const mapsvg = <img src={map} className="logo2" alt='map'></img>
 const equipsvg = <img src={equipment} alt='equipment'></img>
-const heartsvg = <img src={heartbeat} alt='heartbeat'></img>
 const trainsvg = <img src={training} alt='training'></img>
 const menusvg = <img src={menu} alt='training'></img>
+const heartsvg = <img src={heart} alt='heart'></img>
 const test1 = <img src={testimonial1} className="rounded-circle" alt='testimonial'></img>
 const test2 = <img src={testimonial2} className="rounded-circle" alt='testimonial'></img>
 const test3 = <img src={testimonial3} className="rounded-circle" alt='testimonial'></img>
@@ -56,13 +56,12 @@ return (
         </li>
         <li className="nav-item dropdown navdistance">
           <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Members
-          </a>
+          <Link to="/login">Members</Link></a>
+          </li>
           <ul className="dropdown-menu">
           <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
             <li><a className="dropdown-item"><Link to="/registration">Register</Link></a></li>
           </ul>
-        </li>
       </ul>
     </div>
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
@@ -144,7 +143,7 @@ return (
             <div className="col-md-4">
                 <div className="card p-3 text-center px-4">                    
                     <div className="user-image">                        
-                <img src="pictures/testimonial-1.jpg" class="rounded-circle" width="80"/>
+                {test1}
                     </div>                    
                     <div className="user-content">                        
                         <h5 className="mb-0 font2">Jane Hardy</h5>
@@ -163,7 +162,7 @@ return (
             <div className="col-md-4">                
                 <div className="card p-3 text-center px-4">                    
                     <div className="user-image">                        
-                <img src="pictures/testimonial-3.jpg" class="rounded-circle" width="66"/>                        
+                    {test2}                       
                     </div>                    
                     <div className="user-content">                        
                         <h5 className="mb-0 font2">Mark Smith</h5>
@@ -183,7 +182,7 @@ return (
             <div className="col-md-4">                
                 <div className="card p-3 text-center px-4">                    
                     <div className="user-image">                        
-                <img src="pictures/testimonial-2.jpg" className="rounded-circle" width="80"/>                        
+                    {test3}                        
                     </div>                    
                     <div className="user-content">                        
                         <h5 className="mb-0 font2">Veera  Duncan</h5>
