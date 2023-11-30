@@ -18,6 +18,14 @@ import { Link } from 'react-router-dom';
 
 
 function Home() {
+
+  const computeClick = (e)=>{
+     e.preventDefault();
+        const weight = parseFloat(document.getElementById('weight').value);
+        const height = parseFloat(document.getElementById('height').value) / 100;
+        const bmi = weight / (height * height);
+        document.getElementById('result').innerHTML = `Your BMI is: ${bmi.toFixed(2)}`;
+  }
  
       //   document.getElementById('bmiForm').addEventListener('submit', function (e) {
       //   e.preventDefault();
@@ -39,9 +47,9 @@ const tr1pic = <img src={trainer1} className="img-responsive" alt='trainer'></im
 const tr2pic = <img src={trainer2} className="img-responsive" alt='trainer'></img>
 const tr3pic = <img src={trainer3} className="img-responsive" alt='trainer'></img>
 const wmpic = <img src={waistpic} className="img-fluid" alt='waist'></img>
-const yoga = <video muted autoplay loop playsinline src={vid1} className="exercise" alt='yoga' type="video/mp4"></video>
-const weightlifting = <video muted autoplay loop playsinline src={vid2} className="exercise" alt='waightlifting' type="video/mp4"></video>
-const cardio = <video muted autoplay loop playsinline src={vid3} className="exercise" alt='cardio' type="video/mp4"></video>
+const yoga = <video muted autoPlay loop playsinline src={vid1} className="exercise" alt='yoga' type="video/mp4"></video>
+const weightlifting = <video muted autoPlay loop playsinline src={vid2} className="exercise" alt='waightlifting' type="video/mp4"></video>
+const cardio = <video muted autoPlay loop playsinline src={vid3} className="exercise" alt='cardio' type="video/mp4"></video>
 
 return (
 <div className='background'>
@@ -55,7 +63,7 @@ return (
     <div className="collapse navbar-collapse distance2" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item navdistance">
-        <a className="nav-link active" aria-current="page">Home</a>
+        <a className="nav-link active font3" aria-current="page">HOME</a>
         </li>
         <li className="nav-item navdistance">
           <a className="nav-link"><Link to="/about">About Us</Link></a>
@@ -223,14 +231,14 @@ return (
                 <div className="calculator">
                   <h1 className="font3">BMI Calculator</h1>
                   <form id="bmiForm">
-                    <label for="weight">Weight (kg):</label>
+                    <label for="weight" className='font3'>Weight (kg):</label>
                     <input type="number" id="weight" name="weight" required/>
                     <br/>
-                    <label for="height">Height (cm):</label>
+                    <label for="height" className='font3'>Height (cm):</label>
                     <input type="number" id="height" name="height" required/>
                     <br/>
                     <br/>
-                    <input type="submit" value="Calculate"/>
+                    <input type="submit" value="Calculate" onClick={computeClick}/>
                   </form>
                   <br/>
                   <p id="result" class="font3"></p>

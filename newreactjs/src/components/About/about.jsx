@@ -56,12 +56,13 @@ return (
         </li>
         <li className="nav-item dropdown navdistance">
           <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <Link to="/login">Members</Link></a>
-          </li>
+          <Link to="/login">Members</Link>
+          </a>
           <ul className="dropdown-menu">
           <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
             <li><a className="dropdown-item"><Link to="/registration">Register</Link></a></li>
           </ul>
+          </li>
       </ul>
     </div>
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
