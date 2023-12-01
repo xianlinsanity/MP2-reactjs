@@ -93,8 +93,6 @@ return (
     <br/>
     <section>
     <div className="container about">
-      <br/>
-      <br/>
       <h1 className="content2 font2"> WHY CHOOSE US? </h1>
       <p className="fonthome"> WE WILL HELP YOU PUSH YOUR LIMIT</p>
       <br/>
@@ -132,12 +130,6 @@ return (
       </div>
     </div>
     </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <br />
     <br />
     {/* <!-- Testimonials --> */}

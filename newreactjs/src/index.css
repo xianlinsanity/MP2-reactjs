@@ -157,7 +157,7 @@ th, td {
   background-image: url(pictures/hero-1.jpg);
   background-size: auto;
   background-position: center;
-  height: 722px;
+  height: 100%;
   width: 100%;
 }
 .pricing{

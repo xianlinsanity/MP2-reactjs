@@ -19,6 +19,7 @@ function Registration() {
     const phonenumber = document.getElementById("phonenumber")
     const gender = document.getElementById("gender")
     const subscription = document.getElementById("subscription")
+    const program = document.getElementById("program")
     const age = document.getElementById("age")
     const bmi = document.getElementById("bmi")
 
@@ -37,6 +38,7 @@ function Registration() {
             phonenumber: phonenumber.value,
             gender: gender.value,
             subscription: subscription.value,
+            program: program.value,
             age: age.value,
             bmi: bmi.value,
         })
@@ -147,6 +149,13 @@ return (
                  <option value="walk-in">Walk-in</option>
                  <option value="1-Year">1-Year</option>
                  <option value="6-Months">6-Months</option>
+            </select>
+            <label for="program" className="p2">Select Program:</label>
+             <select class="form-select" id="program">
+                 <option selected>Choose...</option>
+                 <option value="yoga">Yoga</option>
+                 <option value="weightlifting">Weightlifting</option>
+                 <option value="cardio">Cardio</option>
             </select>
             <br />
             <input type="number" id="age" placeholder="Age"/>

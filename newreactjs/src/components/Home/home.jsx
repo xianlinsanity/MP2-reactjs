@@ -110,8 +110,6 @@ return (
     <br/>
   <section>
       <div className="home">
-        <br/>
-        <br/>
     <h1 className="content font2"> BE THE BEST VERSION OF YOURSELF... <br/> JOIN OUR PROGRAM! </h1>
     <p className="fonthome"> Join now and enjoy a &#8369;100 gift card!</p>
     <h2 className="font2"><a className="link-offset-2 link-underline link-underline-opacity-0"><Link to="/registration"><mark>JOIN NOW</mark></Link></a></h2>
