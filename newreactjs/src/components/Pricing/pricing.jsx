@@ -98,8 +98,8 @@ return (
                     <li>Unlimited equipments</li>
                     <li>Personal trainer</li>
                     <li>Weight losing classes</li>
-                    <li>Month to mouth</li>
                     <li>No time restriction</li>
+                    <li>Good for 24 hours</li>
                 </ul>    
                 <span class="ag-courses-item_font">
                     AVAILABLE DAILY
@@ -122,7 +122,7 @@ return (
                     <li>Unlimited equipments</li>
                     <li>Personal trainer</li>
                     <li>Weight losing classes</li>
-                    <li>Month to mouth</li>
+                    <li>Month to month</li>
                     <li>No time restriction</li>
                 </ul>    
                 <span className="ag-courses-item_font">
@@ -147,7 +147,7 @@ return (
                     <li>Unlimited equipments</li>
                     <li>Personal trainer</li>
                     <li>Weight losing classes</li>
-                    <li>Month to mouth</li>
+                    <li>Month to month</li>
                     <li>No time restriction</li>
                 </ul>    
                 <span className="ag-courses-item_font">

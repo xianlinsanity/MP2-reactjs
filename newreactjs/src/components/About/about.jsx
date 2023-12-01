@@ -101,13 +101,11 @@ return (
           <div className="col-6">
           {equipsvg}
             <br/>
-            <br/>
             <h5 className="font1">MODERN EQUIPMENTS</h5>
             <p className="font2">Our state-of-the-art gym is where cutting-edge technology meets fitness excellence. Our facility boasts an impressive array of modern equipment designed to cater to all your workout needs.</p>
           </div>
           <div className="col-6">
           {menusvg}
-            <br/>
             <br/>
             <h5 className="font1">HEALTHY DIET PLAN</h5>
             <p className="font2">We understand that fitness isn't just about workouts—it also includes nutrition. Our dedicated team experts design personalized and sustainable diet plans tailored to individual fitness goals.</p>
@@ -115,15 +113,13 @@ return (
           <div className="col-6">
           {trainsvg}
             <br/>
-            <br/>
             <h5 className="font1">PROFESSIONAL TRAINERS</h5>
             <p className="font2">Our gym’s professional trainers are experts in fitness and wellness who can help you achieve your goals. They can design a personalized program that suits your needs and preferences</p>
           </div>
           <div className="col-6">
           {heartsvg}
             <br/>
-            <br/>
-            <h5 class="font1">ACCORDING TO YOUR NEEDS</h5>
+            <h5 class="font1">DEPENDS ON YOUR NEEDS</h5>
             <p class="font2">We offer a customize approach that tailors the workout program to each individual as we understand that every client is unique and has different needs and goals.</p>
           </div>
         </div>
