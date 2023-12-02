@@ -92,7 +92,7 @@ return (
     <br/>
     <br/>
     <section>
-    <div className="container about">
+    <div className="container-fluid about">
       <h1 className="content2 font2"> WHY CHOOSE US? </h1>
       <p className="fonthome"> WE WILL HELP YOU PUSH YOUR LIMIT</p>
       <br/>
@@ -130,7 +130,7 @@ return (
     <br />
     {/* <!-- Testimonials --> */}
     <section>
-    <div className="container trainorbackground">
+    <div className="container-fluid trainorbackground">
       <h1 className="font2"> TESTIMONIALS </h1>
       <br/>
       <h4 className="font3">HERE'S WHAT OUR SATISFIED CLIENTS SAY ABOUT OUR SERVICE</h4>

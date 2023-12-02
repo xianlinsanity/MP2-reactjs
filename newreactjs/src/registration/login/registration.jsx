@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../logo.png';
 import youtube from '../../youtube.svg'
 import facebook from '../../facebook.svg'
@@ -54,7 +54,6 @@ function Registration() {
              // Prevent the form from submitting
              return false;
           })
-  
     }
     const newlogo = <img src={logo} className="img-thumbnail logo1" alt='logo'></img>
     const youtubesvg = <img src={youtube} className="logo" alt='youtube'></img>
@@ -132,17 +131,17 @@ return (
                 <input type="text" id="username" placeholder="Username"/>
                 <input type="password" id="password" placeholder="Password"/>
                 <label for="information" className="p2">Personal Information:</label>
-            <input type="text" id="firstname" placeholder="First Name"/>
-            <input type="text" id="lastname" placeholder="Last Name"/>
-            <input type="text" id="email" placeholder="Email Address"/>
-            <input type="tel" id="phonenumber" placeholder="Phone Number"/>
-            <label for="gender" className="p2">Gender:</label>
-             <select class="form-select" id="gender">
-                 <option selected>Choose...</option>
-                 <option value="Male">Male</option>
-                 <option value="Female">Female</option>
-                 <option value="Confused">Undecided</option>
-            </select>
+                <input type="text" id="firstname" placeholder="First Name"/>
+                <input type="text" id="lastname" placeholder="Last Name"/>
+                <input type="text" id="email" placeholder="Email Address"/>
+                <input type="tel" id="phonenumber" placeholder="Phone Number"/>
+                <label for="gender" className="p2">Gender:</label>
+                <select class="form-select" id="gender">
+                  <option selected>Choose...</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Confused">Undecided</option>
+                </select>
             <label for="subscription" className="p2">Select Subscription:</label>
              <select class="form-select" id="subscription">
                  <option selected>Choose...</option>
@@ -160,6 +159,8 @@ return (
             <br />
             <input type="number" id="age" placeholder="Age"/>
             <input type="number" id="bmi" placeholder="BMI"/>
+            <p className='p2'>Please click <Link to="/bmi">here</Link> to get your BMI </p>
+            <br />
             <br/>
                 <button id="register" onClick={registerbtnclick} className='btn btn-secondary btn-lg'>Register</button>
                 <br/>

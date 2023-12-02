@@ -219,7 +219,7 @@ return (
 <section>
       <br/>
       <br/>
-      <h1 className="p-3 mb-2 .bg-success-subtle text-emphasis-light font2 container2">LET'S GET YOUR BODY MASS INDEX (BMI)</h1>
+      <h1 className="p-3 mb-2 .bg-success-subtle text-emphasis-light font2 container2" id='bmilink'>LET'S GET YOUR BODY MASS INDEX (BMI)</h1>
       <div className="container" >
           <div className="row">
               <div className="col-lg-6">
@@ -229,10 +229,10 @@ return (
                 <div className="calculator">
                   <h1 className="font3">BMI Calculator</h1>
                   <form id="bmiForm">
-                    <label for="weight" className='font3'>Weight (kg):</label>
+                    <label for="weight" className='font3' required>Weight (kg):</label>
                     <input type="number" id="weight" name="weight" required/>
                     <br/>
-                    <label for="height" className='font3'>Height (cm):</label>
+                    <label for="height" className='font3' required>Height (cm):</label>
                     <input type="number" id="height" name="height" required/>
                     <br/>
                     <br/>
