@@ -65,7 +65,7 @@ return (
           <a className="nav-link"><Link to="/about">About Us</Link></a>
         </li>
         <li className="nav-item navdistance">
-          <a className="nav-link" aria-current="page">Pricing</a>
+          <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
         </li>
         <li className="nav-item dropdown navdistance">
           <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">

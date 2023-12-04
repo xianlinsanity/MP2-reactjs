@@ -72,31 +72,31 @@ function Registration() {
     const mapsvg = <img src={map} className="logo2" alt='map'></img>
 return (
     <div>
-      <div>
-      <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-  <div className="container distance1">
-    <a className="navbar-brand"><Link to="/home">{newlogo}</Link></a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <div>
+    <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div className="container distance1">
+      <a className="navbar-brand"><Link to="/home">{newlogo}</Link></a>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
-    </button>
+      </button>
     <div className="collapse navbar-collapse navbg distance2" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item navdistance">
         <a className="nav-link active"><Link to="/home">Home</Link></a>
         </li>
         <li className="nav-item navdistance">
-          <a className="nav-link"><Link to="/about">About Us</Link></a>
+        <a className="nav-link"><Link to="/about">About Us</Link></a>
         </li>
         <li className="nav-item navdistance">
-          <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
+        <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
         </li>
-        <li className="nav-item dropdown navdistance">
+          <li className="nav-item dropdown navdistance">
           <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <Link to="/login">Members</Link>
           </a>
           <ul className="dropdown-menu">
           <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
-            <li><a className="dropdown-item" aria-current="page"></a></li>
+          <li><a className="dropdown-item" aria-current="page">Register</a></li>
           </ul>
         </li>
       </ul>
