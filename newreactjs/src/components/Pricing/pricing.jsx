@@ -29,7 +29,7 @@ return (
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse distance2" id="navbarNavDropdown">
+    <div className="collapse navbar-collapse navbg" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item navdistance">
         <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
@@ -50,25 +50,21 @@ return (
           </ul>
           </li>
       </ul>
-    </div>
-    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul className="navbar-nav distance1">
-        <li>
-        <h5 className="font1 distance1">follow: </h5>
-        </li>
-        <li className="nav-item distance1">
-        <a href="https://www.facebook.com">{facebooksvg}</a>
-        </li>
-        <li className="nav-item distance1">
-        <a href="https://www.twitter.com">{twittersvg}</a>
-        </li>
-        <li className="nav-item distance1">
-        <a href="https://www.youtube.com">{youtubesvg}</a>
-        </li>
-        <li className="nav-item distance1">
-          <a href="https://www.instagram.com">{instagramsvg} </a>
-        </li>
-    </ul>
+    {/* social links */}
+    <ul className="navbar-nav d-flex flex-row distance2">
+            <li className="nav-item">
+            <a href="https://www.facebook.com">{facebooksvg}</a>
+             </li>
+            <li className="nav-item">
+             <a href="https://www.twitter.com">{twittersvg}</a>
+            </li>
+           <li className="nav-item">
+           <a href="https://www.youtube.com">{youtubesvg}</a>
+            </li>
+           <li className="nav-item">
+           <a href="https://www.instagram.com">{instagramsvg} </a>
+            </li>
+        </ul>
     </div>
     </div>
     </nav>

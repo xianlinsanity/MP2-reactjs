@@ -7,7 +7,6 @@ import Profile from './components/Profile/Profile';
 import Home from './components/Home/home';
 import About from './components/About/about';
 import Pricing from './components/Pricing/pricing';
-import BMI from './components/BMI/bmi';
 
 function App() {
   const userToken = localStorage.getItem('token');
@@ -24,7 +23,6 @@ function App() {
         <Route path="home" element={<Home/>}/>
         <Route path="about" element={<About/>}/>
         <Route path="pricing" element={<Pricing/>}/>
-        <Route path="bmi" element={<BMI/>}/>
     {
         userToken ? //render if token is generated
         <Route path="/">

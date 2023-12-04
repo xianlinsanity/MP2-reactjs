@@ -10,6 +10,13 @@ import map from '../../map.svg'
 import { Link } from 'react-router-dom';
 
 function Registration() {
+  const computeClick = (e)=>{
+    e.preventDefault();
+       const weight = parseFloat(document.getElementById('weight').value);
+       const height = parseFloat(document.getElementById('height').value) / 100;
+       const bmi = weight / (height * height);
+       document.getElementById('result').innerHTML = `Your BMI is: ${bmi.toFixed(2)}`;
+ }
     const registerbtnclick = function(){
     const username = document.getElementById("username")
     const password = document.getElementById("password")
@@ -72,7 +79,7 @@ return (
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse distance2" id="navbarNavDropdown">
+        <div className="collapse navbar-collapse navbg" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item navdistance">
             <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
@@ -93,22 +100,18 @@ return (
               </ul>
             </li>
           </ul>
-        </div>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav distance2">
-            <li>
-            <h5 className="font1 distance2">follow: </h5>
-            </li>
-            <li className="nav-item distance2">
+        {/* social links */}
+        <ul className="navbar-nav d-flex flex-row  distance2">
+            <li className="nav-item">
             <a href="https://www.facebook.com">{facebooksvg}</a>
+             </li>
+            <li className="nav-item">
+             <a href="https://www.twitter.com">{twittersvg}</a>
             </li>
-            <li className="nav-item distance1">
-            <a href="https://www.twitter.com">{twittersvg}</a>
+           <li className="nav-item">
+           <a href="https://www.youtube.com">{youtubesvg}</a>
             </li>
-            <li className="nav-item distance1">
-            <a href="https://www.youtube.com">{youtubesvg}</a>
-            </li>
-            <li className="nav-item distance1">
+           <li className="nav-item">
            <a href="https://www.instagram.com">{instagramsvg} </a>
             </li>
         </ul>
@@ -159,9 +162,28 @@ return (
             <br />
             <input type="number" id="age" placeholder="Age"/>
             <input type="number" id="bmi" placeholder="BMI"/>
-            <p className='p2'>Please click <Link to="/bmi">here</Link> to get your BMI </p>
-            <br />
-            <br/>
+            <div className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle font3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             BMI Calculator
+             </a>
+             <div className="col-lg-6 dropdown-menu">
+                <div className="calculator">
+                  <h1 className="font5">BMI Calculator</h1>
+                  <form id="bmiForm dropdown-item">
+                    <label for="weight" className='font3' required>Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" required/>
+                    <br/>
+                    <label for="height" className='font3' required>Height (cm):</label>
+                    <input type="number" id="height" name="height" required/>
+                    <br/>
+                    <br/>
+                    <input type="submit" value="Calculate" onClick={computeClick}/>
+                  </form>
+                  <br/>
+                  <p id="result" class="font3"></p>
+                </div>
+              </div>
+              <br />
                 <button id="register" onClick={registerbtnclick} className='btn btn-secondary btn-lg'>Register</button>
                 <br/>
                 <p className='p2' id="message"></p>
@@ -169,7 +191,8 @@ return (
             <br/>
             <p className='p2'>Please click on <Link to="/login">Login</Link> if you are already registered.</p>
             </div>
-            <footer className="footerbg border border-secondary">
+      </div>
+      <footer className="footerbg border border-secondary">
        <br/>
        <div className="container text-center">
         <div className="row">
@@ -186,8 +209,9 @@ return (
        <br/>
        </div>
        <p className="font2 p-3 mb-2 bg-black text-white">Copyright ©2023 All rights reserved | No Pain No Gain®</p>
-      </footer>   
-        </div>
+       </footer> 
+    </div>
+
       )
     }
 export default Registration;

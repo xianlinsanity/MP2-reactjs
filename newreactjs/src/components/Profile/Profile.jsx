@@ -31,6 +31,7 @@ function Home() {
     }, [])
     const newlogo = <img src={logo} class="img-thumbnail logo1" ></img>
     return (
+    
         <div className='container1'>
             {newlogo}
             <br />
@@ -86,6 +87,7 @@ function Home() {
         <br />
             <button className='btn btn-secondary btn-lg' onClick={logout}>Logout</button>
         </div>
+   
     )
 }
 
