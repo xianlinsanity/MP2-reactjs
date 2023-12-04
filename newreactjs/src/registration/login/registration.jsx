@@ -74,34 +74,34 @@ return (
     <div>
       <div>
       <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div className="container distance1">
-      <a className="navbar-brand"><Link to="/home">{newlogo}</Link></a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse navbg" id="navbarNavDropdown">
-          <ul className="navbar-nav">
-            <li className="nav-item navdistance">
-            <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
-            </li>
-            <li className="nav-item navdistance">
-              <a className="nav-link"><Link to="/about">About Us</Link></a>
-            </li>
-            <li className="nav-item navdistance">
-              <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
-            </li>
-            <li className="nav-item dropdown navdistance">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Members
-              </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
-                <li><a className="dropdown-item"><Link to="/registration">Register</Link></a></li>
-              </ul>
-            </li>
+  <div className="container distance1">
+    <a className="navbar-brand"><Link to="/home">{newlogo}</Link></a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse navbg distance2" id="navbarNavDropdown">
+      <ul className="navbar-nav">
+        <li className="nav-item navdistance">
+        <a className="nav-link active"><Link to="/home">Home</Link></a>
+        </li>
+        <li className="nav-item navdistance">
+          <a className="nav-link"><Link to="/about">About Us</Link></a>
+        </li>
+        <li className="nav-item navdistance">
+          <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
+        </li>
+        <li className="nav-item dropdown navdistance">
+          <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link to="/login">Members</Link>
+          </a>
+          <ul className="dropdown-menu">
+          <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
+            <li><a className="dropdown-item" aria-current="page"></a></li>
           </ul>
-        {/* social links */}
-        <ul className="navbar-nav d-flex flex-row  distance2">
+        </li>
+      </ul>
+         {/* social links */}
+         <ul className="navbar-nav d-flex flex-row  distance2">
             <li className="nav-item">
             <a href="https://www.facebook.com">{facebooksvg}</a>
              </li>
@@ -115,9 +115,9 @@ return (
            <a href="https://www.instagram.com">{instagramsvg} </a>
             </li>
         </ul>
-        </div>
-        </div>
-        </nav>
+    </div>
+    </div>
+    </nav>
       </div>
       <br />
       <br />

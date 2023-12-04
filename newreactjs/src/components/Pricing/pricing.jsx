@@ -29,29 +29,29 @@ return (
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse navbg" id="navbarNavDropdown">
+    <div className="collapse navbar-collapse navbg distance2" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item navdistance">
-        <a className="nav-link active" aria-current="page"><Link to="/home">Home</Link></a>
+        <a className="nav-link active"><Link to="/home">Home</Link></a>
         </li>
         <li className="nav-item navdistance">
           <a className="nav-link"><Link to="/about">About Us</Link></a>
         </li>
         <li className="nav-item navdistance">
-          <a className="nav-link font3">PRICING</a>
+          <a className="nav-link" aria-current="page">Pricing</a>
         </li>
         <li className="nav-item dropdown navdistance">
           <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <Link to="/login">MEMBERS</Link>
+          <Link to="/login">Members</Link>
           </a>
           <ul className="dropdown-menu">
           <li><a className="dropdown-item"><Link to="/login">Login</Link></a></li>
             <li><a className="dropdown-item"><Link to="/registration">Register</Link></a></li>
           </ul>
-          </li>
+        </li>
       </ul>
-    {/* social links */}
-    <ul className="navbar-nav d-flex flex-row distance2">
+         {/* social links */}
+         <ul className="navbar-nav d-flex flex-row  distance2">
             <li className="nav-item">
             <a href="https://www.facebook.com">{facebooksvg}</a>
              </li>
