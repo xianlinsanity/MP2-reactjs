@@ -137,7 +137,7 @@ return (
                 <input type="text" id="firstname" placeholder="First Name"/>
                 <input type="text" id="lastname" placeholder="Last Name"/>
                 <input type="text" id="email" placeholder="Email Address"/>
-                <input type="tel" id="phonenumber" placeholder="Phone Number"/>
+                <input type="tel" id="phonenumber" placeholder="Phone Number" ui-mask="(999) 999-9999" mask-placeholder="(___) ___-____"/>
                 <label for="gender" className="p2">Gender:</label>
                 <select class="form-select" id="gender">
                   <option selected>Choose...</option>
