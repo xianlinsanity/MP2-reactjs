@@ -6,6 +6,7 @@ import Login from './registration/login/login';
 import Profile from './components/Profile/Profile';
 import Home from './components/Home/home';
 import About from './components/About/about';
+import Shop from './components/Shop/shop';
 import Pricing from './components/Pricing/pricing';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="registration" element={<Registration/>}/>
         <Route path="home" element={<Home/>}/>
         <Route path="about" element={<About/>}/>
+        <Route path="shop" element={<Shop/>}/>
         <Route path="pricing" element={<Pricing/>}/>
     {
         userToken ? //render if token is generated

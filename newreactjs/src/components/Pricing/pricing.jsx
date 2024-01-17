@@ -38,6 +38,9 @@ return (
           <a className="nav-link"><Link to="/about">About Us</Link></a>
         </li>
         <li className="nav-item navdistance">
+          <a className="nav-link"><Link to="/shop">Shop Now</Link></a>
+        </li>
+        <li className="nav-item navdistance">
           <a className="nav-link" aria-current="page">Pricing</a>
         </li>
         <li className="nav-item dropdown navdistance">
