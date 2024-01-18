@@ -7,6 +7,13 @@ import twitter from '../../twitter-x.svg'
 import phone from '../../phone.svg'
 import email from '../../e-mail.svg'
 import map from '../../map.svg'
+import trainer1 from '../../team1.jpg'
+import trainer2 from '../../team2.jpg'
+import trainer3 from '../../team3.jpg'
+import waistpic from '../../waist.jpg'
+import vid1 from '../../video1.mp4'
+import vid2 from '../../video2.mp4'
+import vid3 from '../../video3.mp4'
 import { Link } from 'react-router-dom';
 import Data from '../../products.json'
 import Card from './card'
@@ -22,6 +29,8 @@ function Shop() {
     const emailsvg = <img src={email} className="logo2" alt='email'></img>
     const mapsvg = <img src={map} className="logo2" alt='map'></img>
     const title = "All Items"
+
+
 
 
     return (
@@ -84,9 +93,9 @@ function Shop() {
             <br />
             <br />
             <br />
-            <div className="container">
+            <div >
                 <div className='row justify-content-center'>
-                    <div className='col-lg-4 col-12 p2'>
+                    <div className='col-lg-6 col-8 p2'>
                         {title}
                         <br />
                         <div className='font5'>
