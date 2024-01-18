@@ -13,16 +13,16 @@ function App() {
   const userToken = localStorage.getItem('token');
   console.log('current userToken:', userToken)
   console.log('window.location:', window.location)
-  if((window.location.pathname !== '/login' && window.location.pathname !== '/register')  && !userToken){
-    window.location.href = 'login';
+  if((window.location.pathname !== '/home' && window.location.pathname !== '/register')  && !userToken){
+    window.location.href = 'home';
   }
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="home" element={<Home/>}/>
         <Route path="login" element={<Login/>}/>
         <Route path="registration" element={<Registration/>}/>
-        <Route path="home" element={<Home/>}/>
-        <Route path="about" element={<About/>}/>
+         <Route path="about" element={<About/>}/>
         <Route path="shop" element={<Shop/>}/>
         <Route path="pricing" element={<Pricing/>}/>
     {

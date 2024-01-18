@@ -169,7 +169,15 @@ th, td {
   opacity: 10;
   padding-top: -25%;
 }
-
+.shopBackground{
+  background-image: url(pictures/modermgym.jpg);
+  background-size: auto;
+  background-position: center;
+  height: 25%;
+  width: 100%;
+  opacity: 10;
+  padding-top: -25%;
+}
 .background{
   background-color: #292828;
 }
