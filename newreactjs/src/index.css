@@ -17,12 +17,12 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     backdrop-filter: blur(50px)
-}
+/* }
 .container {
   margin: -15px auto;
   max-width: 1250px;
   padding: 0px;
-  backdrop-filter: blur(150px)
+  backdrop-filter: blur(150px) */
 }
 .container2 {
   margin: -15px auto;
@@ -134,6 +134,9 @@ th, td {
   color: gold;
   transform: rotate(15deg);
 }
+.nav-toggler{
+  margin-right: 60px;
+}
 .navdistance{
   padding-right: 40px;
   font-size: larger;
@@ -173,13 +176,13 @@ th, td {
   background-image: url(pictures/modermgym.jpg);
   background-size: auto;
   background-position: center;
-  height: 25%;
+  height: 30%;
   width: 100%;
   opacity: 10;
   padding-top: -25%;
 }
 .background{
-  background-color: #292828;
+  background-color: #040000;
 }
 .exercisebg{
   background-color: rgb(33, 32, 32);
@@ -648,4 +651,15 @@ th, td {
   .ag-courses-item_date-box {
     font-size: 16px;
   }
+}
+/* products */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.image-container img {
+  transition: transform 0.3s ease-in-out;
+}
+.image-container:hover img {
+  transform: scale(1.3); /* Adjust the scale value as needed */
 }

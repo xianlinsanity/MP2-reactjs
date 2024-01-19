@@ -1,9 +1,9 @@
 import React from 'react'
 import Data from '../../products.json'
-
+import{useCart} from 'react-use-cart';
 
 function Card() {
-
+const {addItem} = useCart();
 
 
     return (
@@ -13,8 +13,8 @@ function Card() {
                     {
                         Data && Data.map(data => {
                             return (
-                                <div key={data.id} className='col-6'>
-                                    <div className="card">
+                                <div key={data.id} className='col-lg-4 col-md-6 col-12'>
+                                    <div className="card image-container">
                                         <img src={data.img} alt='' />
                                     </div>
                                     <div className="card-body">
@@ -23,11 +23,8 @@ function Card() {
                                         <p>${data.price}</p>
                                     </div>
                                     <div>
-                                        <button type="button" class="btn btn-danger">Add to Cart</button>
-                                    </div>
-                                    <div>
-                                        <button type="button" class="btn btn-primary">Buy Now</button>
-                                    </div>
+                                        <button class="btn btn-danger"onClick={()=>addItem(data)}>Add to Cart</button>
+                                    </div>                             
                                     <br />
                                 </div>
                             )

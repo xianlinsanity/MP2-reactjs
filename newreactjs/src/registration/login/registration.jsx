@@ -76,7 +76,7 @@ return (
     <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
     <div className="container distance1">
       <a className="navbar-brand"><Link to="/home">{newlogo}</Link></a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler nav-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
       </button>
     <div className="collapse navbar-collapse navbg distance2" id="navbarNavDropdown">

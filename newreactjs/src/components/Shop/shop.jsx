@@ -7,16 +7,11 @@ import twitter from '../../twitter-x.svg'
 import phone from '../../phone.svg'
 import email from '../../e-mail.svg'
 import map from '../../map.svg'
-import trainer1 from '../../team1.jpg'
-import trainer2 from '../../team2.jpg'
-import trainer3 from '../../team3.jpg'
-import waistpic from '../../waist.jpg'
-import vid1 from '../../video1.mp4'
-import vid2 from '../../video2.mp4'
-import vid3 from '../../video3.mp4'
-import { Link } from 'react-router-dom';
-import Data from '../../products.json'
+import { Link } from 'react-router-dom'
 import Card from './card'
+import { CartProvider, useCart } from 'react-use-cart'
+import Cartpage from './cartpage'
+
 
 function Shop() {
 
@@ -39,7 +34,7 @@ function Shop() {
                 <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
                     <div className="container distance1">
                         <a className="navbar-brand"><Link to="/home">{newlogo}</Link></a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <button className="navbar-toggler nav-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse navbg distance2" id="navbarNavDropdown">
@@ -93,16 +88,21 @@ function Shop() {
             <br />
             <br />
             <br />
-            <div >
+            <div className='container-fluid' >
+                <CartProvider>
                 <div className='row justify-content-center'>
                     <div className='col-lg-6 col-8 p2'>
-                        {title}
+                        <h1>{title}</h1>
                         <br />
                         <div className='font5'>
-                            <Card />
+                           <Card />
+                        </div>
+                        <div className='font5'>
+                           <Cartpage />
                         </div>
                     </div>
                 </div>
+                </CartProvider>
             </div>
             <br />
             <br />
