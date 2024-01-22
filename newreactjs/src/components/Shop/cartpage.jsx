@@ -1,9 +1,8 @@
 import React from 'react'
-import { CartProvider, useCart } from "react-use-cart";
+import { useCart } from "react-use-cart";
 
 function Cartpage() {
 
-    const title = "Your Cart"
     const {
         isEmpty,
         totalUniqueItems,
@@ -27,7 +26,7 @@ function Cartpage() {
                         {items.map((item) => (
                                 <tr key={item.id}>
                                     <td>
-                                        <img src={item.img} style={{ height: '6rem' }} />
+                                        <img src={item.img} style={{ height: '6rem' }} alt='' />
                                     </td>
                                     <td>
                                         {item.name}
@@ -56,7 +55,7 @@ function Cartpage() {
                     <h2>Total Price: ${cartTotal}</h2>
                 </div>
                 <div className='col-auto'>
-                   <button className='btn btn-danger ms-2' onClick={()=> emptyCart}>
+                   <button className='btn btn-danger ms-2' onClick={()=> emptyCart()}>
                     Clear Cart
                    </button>
                    <button className='btn btn-primary ms-2'>

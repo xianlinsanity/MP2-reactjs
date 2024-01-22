@@ -23,7 +23,8 @@ const {addItem} = useCart();
                                         <p>${data.price}</p>
                                     </div>
                                     <div>
-                                        <button class="btn btn-danger"onClick={()=>addItem(data)}>Add to Cart</button>
+                                        <button class="btn btn-danger"onClick={()=>addItem(data) }                                    
+                                        >Add to Cart</button>                                        
                                     </div>                             
                                     <br />
                                 </div>
