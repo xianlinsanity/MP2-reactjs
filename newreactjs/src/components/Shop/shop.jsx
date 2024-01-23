@@ -24,7 +24,7 @@ function Shop() {
     const emailsvg = <img src={email} className="logo2" alt='email'></img>
     const mapsvg = <img src={map} className="logo2" alt='map'></img>
     const title = "All Items"
-
+    const subtitle = "Your Cart"
 
 
 
@@ -89,19 +89,17 @@ function Shop() {
             <br />
             <br />
             <div className='container-fluid' >
-                <CartProvider>
-                <div className='row justify-content-center'>
-                    <div className='col-lg-6 col-8 p2'>
-                        <h1>{title}</h1>
+                <CartProvider>                
+                    <div class="row g-0 text-center">
                         <br />
-                        <div className='font5'>
-                           <Card />
+                        <div class="col-sm-6 col-md-8">
+                        <h1 className='p2'>{title}</h1>
+                            <Card />
                         </div>
-                        <div className='font5'>
-                           <Cartpage />
+                        <div class="col-6 col-md-4">
+                             <Cartpage />
                         </div>
                     </div>
-                </div>
                 </CartProvider>
             </div>
             <br />

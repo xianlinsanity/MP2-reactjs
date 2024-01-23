@@ -9,6 +9,7 @@ import Shop from './components/Shop/shop';
 import Pricing from './components/Pricing/pricing';
 import Registration from './registration/login/registration';
 
+
 function App() {
   const userToken = localStorage.getItem('token');
   console.log('current userToken:', userToken)

@@ -18,11 +18,10 @@ const {addItem} = useCart();
                                         <img src={data.img} alt='' />
                                     </div>
                                     <div className="card-body">
-                                        <h5 className="card-title">{data.name}</h5>
-                                        <h5 className="card-title">{data.seller}</h5>
+                                        <h5 className="card-title p1">{data.name}</h5>
+                                        <h5 className="card-title p2">{data.seller}</h5>
                                         <p>${data.price}</p>
                                     </div>
-                                    <br />
                                     <div>
                                         <button class="btn btn-danger"onClick={()=>addItem(data) }                                    
                                         >Add to Cart</button>                                        

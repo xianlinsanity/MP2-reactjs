@@ -14,11 +14,12 @@ function Cartpage() {
         emptyCart,
     } = useCart();
 
-    if (isEmpty) return <p>Your cart is empty</p>;
+    if (isEmpty) return <h4 className='p2'>Your cart is empty</h4>;
 
     return (
-        <section className='py-4 container'>
-            <div className='row justify-content-center'>
+        <div>
+        <section className='py-4 container p2'>
+                <div className='row justify-content-center'>
                 <div className='col-12'>
                     <h5>Cart ({totalUniqueItems}) Total Items: ({totalItems})</h5   >
                     <table className='table table-light table-hover m-0'>
@@ -52,7 +53,7 @@ function Cartpage() {
                     </table>
                 </div>
                 <div className='col-auto ms-auto justify-content-center'>
-                    <h2>Total Price: ${cartTotal}</h2>
+                    <h2 className='p2'>Total Price: ${cartTotal}</h2>
                 </div>
                 <div className='col-auto'>
                    <button className='btn btn-danger ms-2' onClick={()=> emptyCart()}>
@@ -64,6 +65,7 @@ function Cartpage() {
                 </div>
             </div>
         </section>
+        </div>
     );
 }
 

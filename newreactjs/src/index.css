@@ -663,3 +663,6 @@ th, td {
 .image-container:hover img {
   transform: scale(1.3); /* Adjust the scale value as needed */
 }
+.cart-page{
+  position:fixed;
+}
