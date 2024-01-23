@@ -19,10 +19,11 @@ function Registration() {
  }
     const registerbtnclick = function(){
     const username = document.getElementById("username")
+    const email = document.getElementById("email")
     const password = document.getElementById("password")
     const firstname = document.getElementById("firstname")
     const lastname = document.getElementById("lastname")
-    const email = document.getElementById("email")
+   
     const phonenumber = document.getElementById("phonenumber")
     const gender = document.getElementById("gender")
     const subscription = document.getElementById("subscription")

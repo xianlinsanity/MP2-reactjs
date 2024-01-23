@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Registration from './registration/login/registration';
 import Login from './registration/login/login';
 import Profile from './components/Profile/Profile';
 import Home from './components/Home/home';
 import About from './components/About/about';
 import Shop from './components/Shop/shop';
 import Pricing from './components/Pricing/pricing';
+import Registration from './registration/login/registration';
 
 function App() {
   const userToken = localStorage.getItem('token');
