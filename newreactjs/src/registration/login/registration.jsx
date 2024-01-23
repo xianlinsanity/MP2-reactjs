@@ -10,26 +10,17 @@ import map from '../../map.svg'
 import { Link } from 'react-router-dom';
 
 function Registration() {
-  const computeClick = (e)=>{
-    e.preventDefault();
-       const weight = parseFloat(document.getElementById('weight').value);
-       const height = parseFloat(document.getElementById('height').value) / 100;
-       const bmi = weight / (height * height);
-       document.getElementById('result').innerHTML = `Your BMI is: ${bmi.toFixed(2)}`;
- }
+  
     const registerbtnclick = function(){
     const username = document.getElementById("username")
     const email = document.getElementById("email")
     const password = document.getElementById("password")
-    const firstname = document.getElementById("firstname")
-    const lastname = document.getElementById("lastname")
-   
-    const phonenumber = document.getElementById("phonenumber")
-    const gender = document.getElementById("gender")
-    const subscription = document.getElementById("subscription")
-    const program = document.getElementById("program")
-    const age = document.getElementById("age")
-    const bmi = document.getElementById("bmi")
+    const confirmPassword = document.getElementById("confirm-password")
+    const messageElement = document.getElementById("message");
+    
+    if (password.value !== confirmPassword.value) {
+      messageElement.innerHTML = "Password and confirm password do not match.";
+      return false;
 
     fetch('http://localhost:3000/register', {
         method: 'post',
@@ -40,15 +31,8 @@ function Registration() {
         body: JSON.stringify({
             username: username.value,
             password: password.value,
-            firstname: firstname.value,
-            lastname: lastname.value,
             email: email.value,
-            phonenumber: phonenumber.value,
-            gender: gender.value,
-            subscription: subscription.value,
-            program: program.value,
-            age: age.value,
-            bmi: bmi.value,
+      
         })
     }).then(function(result){
           return result.json()
@@ -127,75 +111,33 @@ return (
       <br />
       <br />
       <br />
-      <div className="container1">
-                <br/>
-                <br/>
-            <h2 className='p2'>Registration Form</h2>
-            <br/>
-            <p className='p1'>Please fill out the information to register!</p>
-            <br/>
-            <div>
-                <input type="text" id="username" placeholder="Username"/>
-                <input type="password" id="password" placeholder="Password"/>
-                <label for="information" className="p2">Personal Information:</label>
-                <input type="text" id="firstname" placeholder="First Name"/>
-                <input type="text" id="lastname" placeholder="Last Name"/>
-                <input type="text" id="email" placeholder="Email Address"/>
-                <input type="tel" id="phonenumber" placeholder="Phone Number" ui-mask="(999) 999-9999" mask-placeholder="(___) ___-____"/>
-                <label for="gender" className="p2">Gender:</label>
-                <select class="form-select" id="gender">
-                  <option selected>Choose...</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Confused">Undecided</option>
-                </select>
-            <label for="subscription" className="p2">Select Subscription:</label>
-             <select class="form-select" id="subscription">
-                 <option selected>Choose...</option>
-                 <option value="walk-in">Walk-in</option>
-                 <option value="1-Year">1-Year</option>
-                 <option value="6-Months">6-Months</option>
-            </select>
-            <label for="program" className="p2">Select Program:</label>
-             <select class="form-select" id="program">
-                 <option selected>Choose...</option>
-                 <option value="yoga">Yoga</option>
-                 <option value="weightlifting">Weightlifting</option>
-                 <option value="cardio">Cardio</option>
-            </select>
-            <br />
-            <input type="number" id="age" placeholder="Age"/>
-            <input type="number" id="bmi" placeholder="BMI"/>
-            <div className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle font3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             BMI Calculator
-             </a>
-             <div className="col-lg-6 dropdown-menu">
-                <div className="calculator">
-                  <h1 className="font5">BMI Calculator</h1>
-                  <form id="bmiForm dropdown-item">
-                    <label for="weight" className='font3' required>Weight (kg):</label>
-                    <input type="number" id="weight" name="weight" required/>
-                    <br/>
-                    <label for="height" className='font3' required>Height (cm):</label>
-                    <input type="number" id="height" name="height" required/>
-                    <br/>
-                    <br/>
-                    <input type="submit" value="Calculate" onClick={computeClick}/>
-                  </form>
-                  <br/>
-                  <p id="result" class="font3"></p>
+      <div className='container'>
+                {newlogo}
+                <br />
+                <br />
+                <h2 className='p1'>Registration Form</h2>
+                <br />
+                <p className='p1'>Please fill out the information to register!</p>
+                <br />
+                <div>
+                    <label>
+                     <p className='p1'>Username:</p>
+                     <input type="text" id="username" placeholder="Username" />
+                     <p className='p1'>E-mail Address:</p>
+                     <input type="text" id="email" placeholder="Email Address" />
+                     <p className='p1'>Password:</p>
+                     <input type="password" id="password" placeholder="Password" />
+                     <p className='p1'>Confirm Password:</p>
+                     <input type="password" id="password" placeholder="Password" />
+                     <button id="register" onClick={registerbtnclick} className='btn btn-secondary btn-lg'>Register</button>
+                     <br />
+                     <p id="message"></p>
+                    </label>
+                 </div>
+                 <br />
+                 <p className='p1'>Please click on <Link to="/login">Login</Link> if you are already registered.</p>
+
                 </div>
-              </div>
-              <br />
-                <button id="register" onClick={registerbtnclick} className='btn btn-secondary btn-lg'>Register</button>
-                <br/>
-                <p className='p2' id="message"></p>
-            </div>
-            <br/>
-            <p className='p2'>Please click on <Link to="/login">Login</Link> if you are already registered.</p>
-            </div>
-      </div>
       <footer className="footerbg border border-secondary">
        <br/>
        <div className="container text-center">
@@ -218,4 +160,5 @@ return (
 
       )
     }
+  }
 export default Registration;

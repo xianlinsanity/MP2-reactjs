@@ -22,6 +22,7 @@ const {addItem} = useCart();
                                         <h5 className="card-title">{data.seller}</h5>
                                         <p>${data.price}</p>
                                     </div>
+                                    <br />
                                     <div>
                                         <button class="btn btn-danger"onClick={()=>addItem(data) }                                    
                                         >Add to Cart</button>                                        

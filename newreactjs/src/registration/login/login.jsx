@@ -13,7 +13,7 @@ function Login() {
     const loginbtnclick = function(){
         const username = document.getElementById('username')
             const password = document.getElementById('password')
-            fetch('http://localhost:3000/login', {
+            fetch('http://localhost:8000/api/login', {
                 method: 'post',
                 headers: {
                     'Accept': 'application/json',
@@ -110,13 +110,17 @@ return (
         <p className='p1'>Please fill out the information needed.</p>
         <br/>
         <div>
+          <label>
+            <p className='p1'>Username:</p>
             <input type="text" id="username" placeholder="Username"/>
             <br/>
+            <p className='p1'>Password:</p>
             <input type="password" id="password" placeholder="Password"/>
             <br/>
             <button id="login" onClick={loginbtnclick} className='btn btn-secondary btn-lg'>Login</button>
             <br/>
             <p id="message" className='p1'></p>
+            </label>
         </div>
         <br/>
         <p className='p1'>Not yet a member? Please click <Link to="/registration">here</Link> to register!</p>
