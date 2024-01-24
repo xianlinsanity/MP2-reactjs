@@ -17,12 +17,12 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     backdrop-filter: blur(50px)
-/* }
+}
 .container {
   margin: -15px auto;
   max-width: 1250px;
   padding: 0px;
-  backdrop-filter: blur(150px) */
+  backdrop-filter: blur(150px)
 }
 .container2 {
   margin: -15px auto;
@@ -134,9 +134,9 @@ th, td {
   color: gold;
   transform: rotate(15deg);
 }
-.nav-toggler{
+/* .nav-toggler{
   margin-right: 60px;
-}
+} */
 .navdistance{
   padding-right: 40px;
   font-size: larger;

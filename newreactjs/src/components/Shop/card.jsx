@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Data from '../../products.json'
-import{useCart} from 'react-use-cart';
+import { useCart } from 'react-use-cart';
+
 
 function Card() {
-const {addItem} = useCart();
+    const { addItem } = useCart();
+    const [showPopup, setShowPopup] = useState(false);
 
+    const handleAddToCart = (data) => {
+        addItem(data);
+        alert('Item added to cart!');
+    };
 
     return (
         <div>
@@ -23,9 +29,13 @@ const {addItem} = useCart();
                                         <p>${data.price}</p>
                                     </div>
                                     <div>
-                                        <button class="btn btn-danger"onClick={()=>addItem(data) }                                    
-                                        >Add to Cart</button>                                        
-                                    </div>                             
+                                        <button
+                                            className="btn btn-danger"
+                                            onClick={() => handleAddToCart(data)}
+                                        >
+                                            Add to Cart
+                                        </button>
+                                    </div>
                                     <br />
                                 </div>
                             )
@@ -34,7 +44,6 @@ const {addItem} = useCart();
                     }
                 </div>
             </div>
-
         </div >
     )
 }

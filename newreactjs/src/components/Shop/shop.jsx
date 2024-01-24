@@ -40,13 +40,13 @@ function Shop() {
                         <div className="collapse navbar-collapse navbg distance2" id="navbarNavDropdown">
                             <ul className="navbar-nav">
                                 <li className="nav-item navdistance">
-                                    <a className="nav-link"><Link to="/home">Home</Link></a>
+                                    <a className="nav-link active" aria-current="page">HOME</a>
                                 </li>
                                 <li className="nav-item navdistance">
                                     <a className="nav-link"><Link to="/about">About Us</Link></a>
                                 </li>
                                 <li className="nav-item navdistance">
-                                    <a className="nav-link" aria-current="page">Shop Now</a>
+                                    <a className="nav-link"><Link to="/shop">Shop Now</Link></a>
                                 </li>
                                 <li className="nav-item navdistance">
                                     <a className="nav-link"><Link to="/pricing">Pricing</Link></a>
@@ -89,15 +89,15 @@ function Shop() {
             <br />
             <br />
             <div className='container-fluid' >
-                <CartProvider>                
+                <CartProvider>
                     <div class="row g-0 text-center">
                         <br />
                         <div class="col-sm-6 col-md-8">
-                        <h1 className='p2'>{title}</h1>
+                            <h1 className='p2'>{title}</h1>
                             <Card />
                         </div>
                         <div class="col-6 col-md-4">
-                             <Cartpage />
+                            <Cartpage />
                         </div>
                     </div>
                 </CartProvider>

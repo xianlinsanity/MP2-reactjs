@@ -18,7 +18,7 @@ function Cartpage() {
 
     return (
         <div>
-        <section className='py-4 container p2'>
+        <section className='py-5 p2'>
                 <div className='row justify-content-center'>
                 <div className='col-12'>
                     <h5>Cart ({totalUniqueItems}) Total Items: ({totalItems})</h5   >
@@ -27,7 +27,7 @@ function Cartpage() {
                         {items.map((item) => (
                                 <tr key={item.id}>
                                     <td>
-                                        <img src={item.img} style={{ height: '6rem' }} alt='' />
+                                        <img src={item.img} style={{ height: '5rem' }} alt='' />
                                     </td>
                                     <td>
                                         {item.name}
@@ -38,13 +38,13 @@ function Cartpage() {
                                     <td>
                                         Quantity ({item.quantity})
                                     </td>
-                                        <button className='btn btn-info ms-2' onClick={()=> updateItemQuantity(item.id, item.quantity - 1)}>
+                                        <button className='btn btn-info' onClick={()=> updateItemQuantity(item.id, item.quantity - 1)}>
                                         -
                                         </button>
-                                        <button className='btn btn-info ms-2' onClick={()=> updateItemQuantity(item.id, item.quantity + 1)}>
+                                        <button className='btn btn-info' onClick={()=> updateItemQuantity(item.id, item.quantity + 1)}>
                                         +
                                         </button>
-                                        <button className='btn btn-danger ms-2' onClick={()=> removeItem(item.id)}>
+                                        <button className='btn btn-danger' onClick={()=> removeItem(item.id)}>
                                         Delete Item
                                         </button>
                                 </tr>

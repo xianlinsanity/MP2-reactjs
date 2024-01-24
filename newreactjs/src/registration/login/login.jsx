@@ -11,16 +11,16 @@ import { Link } from 'react-router-dom';
 
 function Login() {
     const loginbtnclick = function(){
-        const username = document.getElementById('username')
+        const email = document.getElementById('email')
             const password = document.getElementById('password')
-            fetch('http://localhost:8000/api/login', {
+            fetch('http://127.0.0.1:8000/api/login', {
                 method: 'post',
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    username: username.value,
+                    email: email.value,
                     password: password.value,
                 })
             }).then(function(result){
@@ -34,10 +34,13 @@ function Login() {
                 } else {
                     document.getElementById("message").innerHTML = "Login Unsuccessful. Please check your credentials.";
                 }
-    
-                // Prevent the form from submitting
-                return false;
+                    // return false;
               })
+              .catch(function (error) {
+                console.error('Error during fetch operation:', error);
+                document.getElementById("message").innerHTML = "An error occurred during the login process. Please try again.";
+            });
+        
     }
     const newlogo = <img src={logo} className="img-thumbnail logo1" alt='logo'></img>
     const youtubesvg = <img src={youtube} className="logo" alt='youtube'></img>
@@ -111,8 +114,8 @@ return (
         <br/>
         <div>
           <label>
-            <p className='p1'>Username:</p>
-            <input type="text" id="username" placeholder="Username"/>
+            <p className='p1'>Enter E-mail Address:</p>
+            <input type="text" id="email" placeholder="E-mail Address"/>
             <br/>
             <p className='p1'>Password:</p>
             <input type="password" id="password" placeholder="Password"/>

@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 function Registration() {
 
   const registerbtnclick = function () {
-    const username = document.getElementById("username")
+    const name = document.getElementById("name")
     const email = document.getElementById("email")
     const password = document.getElementById("password")
     const confirmPassword = document.getElementById("confirm-password")
@@ -31,7 +31,7 @@ function Registration() {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          username: username.value,
+          name: name.value,
           password: password.value,
           email: email.value,
         })
@@ -122,8 +122,8 @@ function Registration() {
           <br />
           <div>
             <label>
-              <p className='p1'>Username:</p>
-              <input type="text" id="username" placeholder="Username" required/>
+              <p className='p1'>Enter Name:</p>
+              <input type="text" id="name" placeholder="Name" required/>
               <p className='p1'>E-mail Address:</p>
               <input type="text" id="email" placeholder="Email Address" required/>
               <p className='p1'>Password:</p>
