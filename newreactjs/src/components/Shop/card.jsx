@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Data from '../../products.json'
 import { useCart } from 'react-use-cart';
-
+import swal from 'sweetalert';
 
 function Card() {
     const { addItem } = useCart();
@@ -9,7 +9,7 @@ function Card() {
 
     const handleAddToCart = (data) => {
         addItem(data);
-        alert('Item added to cart!');
+        swal.success ('Item added to cart!');
     };
 
     return (

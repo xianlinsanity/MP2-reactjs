@@ -29,7 +29,7 @@ function App() {
     {
         userToken ? //render if token is generated
         <Route path="/">
-          <Route index element={<Profile/>}/>
+          <Route index element={<Home/>}/>
         </Route>
         : //else , no go
         ""
