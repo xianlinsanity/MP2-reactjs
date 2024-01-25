@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
 import Data from '../../products.json'
 import { useCart } from 'react-use-cart';
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 
 function Card() {
     const { addItem } = useCart();
-    const [showPopup, setShowPopup] = useState(false);
 
     const handleAddToCart = (data) => {
         addItem(data);
-        swal.success ('Item added to cart!');
+        Swal.fire({
+            title: "Item added to cart succesfully!",
+            icon: "success"
+          });
     };
 
     return (
@@ -24,15 +25,14 @@ function Card() {
                                         <img src={data.img} alt='' />
                                     </div>
                                     <div className="card-body">
-                                        <h5 className="card-title p1">{data.name}</h5>
-                                        <h5 className="card-title p2">{data.seller}</h5>
-                                        <p>${data.price}</p>
+                                        <p className="card-title p1">{data.name}</p>                                      
+                                        <h5 className="card-title p2">{data.seller}</h5>                                 
+                                        <p className='card-text p1'>${data.price}</p>
                                     </div>
                                     <div>
                                         <button
                                             className="btn btn-danger"
-                                            onClick={() => handleAddToCart(data)}
-                                        >
+                                            onClick={() => handleAddToCart(data)}>                                       >
                                             Add to Cart
                                         </button>
                                     </div>

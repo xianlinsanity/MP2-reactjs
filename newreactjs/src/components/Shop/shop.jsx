@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 import Card from './card'
 import { CartProvider, useCart } from 'react-use-cart'
 import Cartpage from './cartpage'
+import TrackOrder from './order-tracker'
 
 
 function Shop() {
@@ -88,15 +89,18 @@ function Shop() {
             <br />
             <br />
             <br />
+            <div>
+                <TrackOrder />                
+            </div>
             <div className='container-fluid' >
                 <CartProvider>
                     <div class="row g-0 text-center">
                         <br />
-                        <div class="col-sm-6 col-md-8">
+                        <div class="col-sm-6 col-md-6">
                             <h1 className='p2'>{title}</h1>
                             <Card />
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-6 col-md-4 mx-auto p-2">
                             <Cartpage />
                         </div>
                     </div>

@@ -15,7 +15,7 @@ function App() {
   console.log('current userToken:', userToken)
   console.log('window.location:', window.location)
   if((window.location.pathname !== '/home' && window.location.pathname !== '/register')  && !userToken){
-    window.location.href = 'home';
+    window.location.href = 'login';
   }
   return (
     <BrowserRouter>

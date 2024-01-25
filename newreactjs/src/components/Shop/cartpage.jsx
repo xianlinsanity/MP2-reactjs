@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { useCart } from "react-use-cart";
+import Swal from 'sweetalert2';
 
 
 function Cartpage() {
@@ -18,18 +18,19 @@ function Cartpage() {
 
     if (isEmpty) return <h4 className='p2'>Your cart is empty</h4>;
 
-    const handleCheckout = async () => {
-        try {
-            // Prepare the cart data
+    const messageElement = document.getElementById("message")
+    
+    const handleCheckout = function () {
+                   // Prepare the cart data
             const cartData = Object.values(items).map(item => ({
                 id: item.id,
                 name: item.name,
-                quantity: item.quantity,
+                qty: item.quantity,
                 price: item.price,
             }));
 
             // Make a POST request to the Laravel API endpoint
-            const response = await fetch('http://127.0.0.1:8000/api/checkoutCounter', {
+            const response = fetch('http://127.0.0.1:8000/api/checkout', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,32 +38,31 @@ function Cartpage() {
                 body: JSON.stringify({
                     cart: cartData,
                 }),
-            });
+           
+                     }).then(function (result) {
+                return result.json()
+              }).then(function (result) {
+                console.log('result: ', result)
 
-            // Check if the request was successful
-            if (response.ok) {
-                const data = await response.json();
-                console.log('Checkout successful!', data);
+                
+                if (result.success) {
+                    Swal.fire({
+                        title: "You ordered:",
+                        text: "Your reference number is:" + result.reference,
+                        icon: "success"
+                      });
+                    // swal("Items checked out succesfully! Your reference number is:" + result.reference)
+                  emptyCart();
+                } else {
+                  document.getElementById("message").innerHTML = "Checkout not successful";
+                }}
 
-                // Clear the cart after successful checkout
-                emptyCart();
-
-                // Redirect or perform other actions as needed
-                // For example, redirect to a thank-you page
-                // window.location.href = '/thank-you';
-            } else {
-                console.error('Checkout failed.');
-                // Handle the error, display a message, or redirect to an error page
-            }
-        } catch (error) {
-            console.error('Error during checkout:', error);
-            // Handle the error, display a message, or redirect to an error page
-        }
-    };
+           
+)    };
 
     return (
         <div>
-            <section className='py-5 p2'>
+            <section className='py-5'>
                 <div className='row justify-content-center'>
                     <div className='col-12'>
                         <h5>Cart ({totalUniqueItems}) Total Items: ({totalItems})</h5   >
@@ -107,6 +107,11 @@ function Cartpage() {
                             Checkout Items
                         </button>
                     </div>
+                    <br />
+                    <br />
+                    {/* <div class="alert alert-primary" role="alert" id="message">
+                    <b id="refNo"></b>
+                    </div> */}
                 </div>
             </section>
         </div>

@@ -15,7 +15,7 @@
     {
         "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
         "category": "Men's Sneaker",
-        "name": "LUNAR NEW YEAR ULTRABOOST DNA SHOES",
+        "name": "ULTRABOOST DNA SHOES",
         "seller": "Addidas",
         "price": 196,
         "stock": 19,
@@ -41,7 +41,7 @@
     {
         "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
         "category": "Men's Sneaker",
-        "name": "LITE RACER ADAPT 3.0 SHOES",
+        "name": "LITE RACER 3.0 SHOES",
         "seller": "Addidas",
         "price": 229,
         "stock": 10,
@@ -93,7 +93,7 @@
     {
         "id": "625b4b60-611c-490c-ac0a-f3c2d2afd05c",
         "category": "Cap",
-        "name": "Relaxed Strap-Back Hat",
+        "name": "STRAP-BACK HAT",
         "seller": "Addidas",
         "price": 24,
         "stock": 9,
@@ -106,7 +106,7 @@
     {
         "id": "5960bf40-9603-4a39-9ff6-6cf9f1ce4815",
         "category": "Cap",
-        "name": "UNISEX ORIGINALS WASHED BUCKET",
+        "name": "UNISEX WASHED BUCKET",
         "seller": "Addidas",
         "price": 27,
         "stock": 14,
@@ -119,7 +119,7 @@
     {
         "id": "5991add1-f4ba-4fb9-9b6b-ec59aa2dda60",
         "category": "Cap",
-        "name": "SST Plus Strap-Back Hat",
+        "name": "SST PLUS HAT",
         "seller": "Addidas",
         "price": 23,
         "stock": 14,
@@ -132,7 +132,7 @@
     {
         "id": "5690e579-a943-4b42-9ffe-dfc65b71c560",
         "category": "Cap",
-        "name": "Dispatch Trucker Hat",
+        "name": "TRUCKER HAT",
         "seller": "Addidas",
         "price": 28,
         "stock": 16,
@@ -171,7 +171,7 @@
     {
         "id": "b357e19b-4dd9-4fc7-b5c0-9ed5255464ba",
         "category": "Men's Pants",
-        "name": "PRIMEBLUE SST TRACK PANTS",
+        "name": "SST TRACK PANTS",
         "seller": "Addidas",
         "price": 63,
         "stock": 46,
@@ -197,7 +197,7 @@
     {
         "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
         "category": "Men's Pants",
-        "name": "TIRO TRACK PANTS RED",
+        "name": "TIRO TRACK PANTS",
         "seller": "Addidas",
         "price": 122,
         "stock": 43,
@@ -210,7 +210,7 @@
     {
         "id": "30698483-f7aa-49ba-9de9-9070f64dc263",
         "category": "Bottle",
-        "name": "Steel Bottle 600 ML",
+        "name": "STEEL BOTTLE 600",
         "seller": "Addidas",
         "price": 23,
         "stock": 11,
@@ -223,7 +223,7 @@
     {
         "id": "02871edc-272b-4e20-bcc2-b32681213b3c",
         "category": "Bottle",
-        "name": "Steel Metal Bottle 2L",
+        "name": "STEEL BOTTLE 2L",
         "seller": "Addidas",
         "price": 37,
         "stock": 14,
