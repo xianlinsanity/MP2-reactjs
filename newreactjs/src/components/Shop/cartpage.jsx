@@ -48,7 +48,7 @@ function Cartpage() {
                 if (result.success) {
                     Swal.fire({
                         title: "You ordered:",
-                        text: "Your reference number is:" + result.reference,
+                        text: "Your reference number is: " + result.reference,
                         icon: "success"
                       });
                     // swal("Items checked out succesfully! Your reference number is:" + result.reference)

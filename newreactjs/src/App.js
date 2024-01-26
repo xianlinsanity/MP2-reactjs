@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Login from './registration/login/login';
-import Profile from './components/Profile/Profile';
 import Home from './components/Home/home';
 import About from './components/About/about';
 import Shop from './components/Shop/shop';
@@ -15,7 +14,7 @@ function App() {
   console.log('current userToken:', userToken)
   console.log('window.location:', window.location)
   if((window.location.pathname !== '/home' && window.location.pathname !== '/register')  && !userToken){
-    window.location.href = 'login';
+    window.location.href = 'home';
   }
   return (
     <BrowserRouter>

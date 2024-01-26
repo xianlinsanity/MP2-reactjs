@@ -4,6 +4,7 @@ import logo from '../../logo.png'
 
 function Home() {
     const [userData, setUserData] = useState({});
+    const [data, setData] = useState({});
     const userToken = localStorage.getItem('token');
 	const logout = ()=>{
         localStorage.clear(); // clear yung storage including token
@@ -11,7 +12,7 @@ function Home() {
     }
 
     const getUserData = () => {
-        fetch('http://localhost:3000/user', {
+        fetch('http://localhost:8000/api/user', {
             method: 'get',
             headers: {
                 'Authorization': 'Bearer ' + userToken
@@ -38,7 +39,7 @@ function Home() {
             <h1 className='p1'>Profile</h1>
             <br />
             <br />
-            <h4 className='p1'>Hello <mark>{userData.username}</mark></h4>
+            <h4 className='p1'>Hello <mark>{data.name}</mark></h4>
             <br />
             <br />
         <table class="table table-dark table-hover">
@@ -59,7 +60,7 @@ function Home() {
                 </tr>
                 <tr>
                     <td>E-mail Address:</td>
-                    <td className='p2'>{userData.email}</td>
+                    <td className='p2'>{data.email}</td>
                 </tr>
                 <tr>
                     <td>Phone Number:</td>
