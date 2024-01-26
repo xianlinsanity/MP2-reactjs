@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 import Card from './card'
 import { CartProvider, useCart } from 'react-use-cart'
 import Cartpage from './cartpage'
-import TrackOrder from './order-tracker'
+// import TrackOrder from './order-tracker'
 
 
 function Shop() {
@@ -25,7 +25,7 @@ function Shop() {
     const emailsvg = <img src={email} className="logo2" alt='email'></img>
     const mapsvg = <img src={map} className="logo2" alt='map'></img>
     const title = "All Items"
-    const subtitle = "Your Cart"
+
 
 
 
@@ -89,9 +89,9 @@ function Shop() {
             <br />
             <br />
             <br />
-            <div>
+            {/* <div>
                 <TrackOrder />                
-            </div>
+            </div> */}
             <div className='container-fluid' >
                 <CartProvider>
                     <div class="row g-0 text-center">

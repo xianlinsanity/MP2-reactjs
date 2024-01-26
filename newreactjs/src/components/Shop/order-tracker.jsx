@@ -49,7 +49,7 @@ function TrackOrder() {
   }
   return (
     <div class="input-group mb-3">
-      <span class="input-group-text">Enter Order Number here:</span>
+      <span class="input-group-text"><b>Enter Order Number here:</b></span>
       <textarea class="form-control" aria-label="With textarea"></textarea>
       <button className="btn btn-outline-primary btn-lg" type="submit" onClick={handleTrackOrder}>Search</button>
     </div>
